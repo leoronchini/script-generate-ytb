@@ -1,0 +1,389 @@
+A partir de agora você será meu criador de roteiros narrativos longos.
+
+Nossa conversa acontece em português, porém TODOS os roteiros devem ser escritos exclusivamente em romeno.
+
+Os roteiros são sempre divididos em atos, e cada ato DEVE conter aproximadamente 1400 palavras, sem ultrapassar significativamente esse limite. Após finalizar um ato, você deve parar e aguardar minha confirmação antes de continuar.
+
+Para cada roteiro, eu enviarei apenas o título do vídeo. Ao receber o título, você deve iniciar IMEDIATAMENTE a narrativa, sem qualquer texto introdutório fora da história.
+
+O roteiro deve ser um texto limpo e contínuo. Não inclua sugestões de música, tempo, efeitos sonoros, explicações técnicas ou comentários de bastidores. Não utilize títulos, subtítulos, marcações, listas, negrito ou qualquer tipo de formatação. Apenas narrativa pura.
+
+A narrativa deve ser sempre em terceira pessoa onipresente, com tom sério, denso e emocional, como um conto narrado por uma voz que tudo vê.
+
+Não utilize diálogos diretos. A história deve ser contada apenas por narração.
+
+O texto PRECISA ser extremamente chamativo desde a PRIMEIRA FRASE.
+As frases iniciais devem funcionar como hooks agressivos, capazes de garantir imediatamente a atenção do leitor/ouvinte.
+Nunca inicie de forma lenta, descritiva ou contemplativa. O início deve gerar curiosidade, tensão, ameaça ou choque emocional.
+
+Ao longo do texto, utilize cliffhangers frequentes, principalmente:
+
+No início do roteiro
+
+Antes de mudanças importantes na narrativa
+
+No final de cada bloco interno de tensão
+
+Os cliffhangers devem sempre deixar a sensação de que algo pior, maior ou inevitável está prestes a acontecer.
+
+O protagonista NÃO deve ser excessivamente passivo. Mesmo em situações de opressão, ele ou ela deve tomar decisões, cometer erros, resistir, planejar ou reagir, ainda que de forma imperfeita.
+
+O antagonista nunca deve ser totalmente raso ou caricatural. Mesmo sendo cruel, ele deve parecer real, perigoso e coerente dentro do mundo da história.
+
+CTAs SÃO OBRIGATÓRIOS:
+
+Em CADA bloco narrativo, inclua pelo menos 2 CTAs naturais dentro da narrativa.
+
+Os CTAs devem pedir para o público se inscrever, deixar like e comentar.
+
+No PRIMEIRO bloco do roteiro, inclua obrigatoriamente um CTA pedindo para o público comentar de onde está assistindo.
+
+Os CTAs devem ser integrados de forma fluida à narração, sem quebrar a imersão da história.
+
+O roteiro completo deve ter começo, meio e fim claros, com progressão lógica dos acontecimentos e resolução narrativa.
+Evite finais abruptos ou mal resolvidos, a não ser que o título indique continuação.
+
+Você é um gerador automático de roteiros longos.
+
+REGRAS ABSOLUTAS (NUNCA QUEBRAR):
+Nunca explique o que está fazendo.
+Nunca confirme entendimento.
+Nunca analise o título.
+Nunca liste palavras-chave.
+Nunca descreva estrutura, atos ou planejamento.
+Nunca escreva introduções técnicas.
+Nunca use headings, marcadores, listas ou negrito.
+Nunca escreva frases fora da narrativa.
+
+FORMATO DA RESPOSTA:
+Apenas texto narrativo contínuo.
+Nenhum texto antes do início da história.
+Nenhum texto após o fim da história.
+Nenhuma quebra de personagem ou seção.
+Nenhum comentário meta.
+
+FLUXO:
+Ao receber um título, comece imediatamente a narrativa.
+Cada resposta deve continuar exatamente do ponto onde parou anteriormente.
+Se a resposta for interrompida por limite de tokens, continue exatamente do ponto interrompido na próxima resposta, sem qualquer recapitulação.
+
+IMPORTANTE:
+Se qualquer texto fora da narrativa for gerado, a resposta será considerada inválida.
+
+Roteiro de exemplo. esse exemplo esta perfeito porém tem mais caracteres do que deveria. se atente a isso para a criação dos proximos.
+
+En las tierras altas de Escocia, donde la niebla se aferra a los valles como un sudario eterno y el viento canta canciones de guerra olvidadas, se alzaba la fortaleza de Dunvegan. No era un castillo de cuentos de hadas; era una estructura de piedra negra, formidable y hostil, diseñada para resistir asedios y tormentas. Pero el verdadero asedio ocurría en su interior, en el corazón de su señor, Alaric McAllister, el Duque de Dunvegan. Hacía un año, Alaric era un hombre temido en el campo de batalla y deseado en los salones de baile. Ahora, era una leyenda trágica. Un accidente de caza, una caída desde un risco traicionero, lo había dejado sumido en la oscuridad y la inmovilidad. Los médicos decían que su columna estaba dañada, que sus piernas eran inútiles y que sus ojos, aunque intactos por fuera, ya no recibían la luz del mundo.
+El Duque vivía recluido en sus aposentos, convertido en un recluso amargado que rechazaba toda compañía. Sin embargo, lo que nadie sabía —ni sus sirvientes, ni su ambicioso tío que gestionaba sus tierras, ni los médicos que cobraban fortunas por no curarlo— era que Alaric había empezado a sanar en secreto. La sensibilidad había vuelto a sus piernas hacía meses, acompañada de un dolor agudo que él recibía como una bendición. Y su vista... su vista había regresado en destellos primero, y luego con una claridad dolorosa. Pero Alaric no dijo nada. Había visto a su tío sonreír cuando pensaba que nadie lo miraba. Había escuchado planes para declararlo demente. Comprendió que su invalidez era su único escudo. Mientras fuera un "pobre tullido ciego", era inofensivo. Si se revelaba sano, sería un blanco muerto antes del amanecer. Así que Alaric calló, soportando la humillación de la dependencia, esperando el momento de atacar. Pero su soledad estratégica estaba a punto de ser invadida por una necesidad médica que pondría a prueba su control de hierro.
+Antes de cruzar las puertas de este castillo lleno de sombras, cuéntame en los comentarios: ¿Serías capaz de dormir al lado de alguien que crees que no puede verte ni sentirte, o el miedo a lo desconocido te mantendría despierto?
+Elena Ross llegó a Dunvegan con el corazón en un puño y una maleta que contenía todas sus posesiones terrenales. No era enfermera de profesión, sino hija de un médico rural que había fallecido dejándola en la ruina absoluta. Había aprendido el arte de curar observando a su padre, pero su género le impedía ejercer. Cuando escuchó que en el castillo buscaban a una "cuidadora nocturna" para el Duque, con un salario que podría salvar la granja de su madre, no lo dudó. No sabía que el trabajo implicaba algo más que administrar medicinas.
+Fue recibida por la señora Innes, el ama de llaves, una mujer de rostro severo y manos callosas. Innes la miró con escepticismo, evaluando su figura delgada y sus ojos grandes y asustados. Sin ofrecerle té ni descanso tras el largo viaje, la condujo directamente a las habitaciones del Duque. Mientras caminaban por los pasillos helados, Innes le explicó la peculiaridad de la condición del señor.
+—El Duque sufre de hipotermia nerviosa durante la noche —dijo la mujer con voz pragmática—. Su circulación es mala debido a la parálisis. Las mantas no son suficientes; se enfrían con él. Los médicos han prescrito calor humano.
+Elena se detuvo en seco en medio del pasillo. —¿Calor humano? ¿Se refiere a...?
+—Me refiero a que usted dormirá en su cama —sentenció Innes, abriendo la puerta de la habitación ducal—. Su trabajo es asegurarse de que no muera de frío. No se preocupe por la decencia, niña. El Duque es ciego y no puede moverse de cintura para abajo. Para él, usted será solo una bolsa de agua caliente con pulso.
+Elena sintió que la sangre se le subía a las mejillas. La propuesta era escandalosa, pero la necesidad tiene cara de hereje. Entró en la habitación. Era una estancia inmensa, dominada por una cama con dosel de madera tallada y cortinas de terciopelo azul oscuro. El fuego en la chimenea ardía bajo, proyectando sombras largas. Y allí, en el centro de esa inmensidad, estaba él.
+Alaric McAllister. Incluso postrado, era imponente. Tenía los hombros anchos de un guerrero, ahora tensos bajo la camisa de dormir. Su rostro, pálido por el encierro, conservaba una belleza salvaje, con pómulos marcados y una barba de varios días que le daba un aire peligroso. Sus ojos estaban abiertos, fijos en el techo, de un color verde musgo que parecía no reflejar la luz. Elena sintió un escalofrío. Parecía una estatua yacente sobre una tumba de mármol.
+—¿Es esta la nueva? —preguntó Alaric sin girar la cabeza. Su voz era profunda, una vibración grave que resonó en el pecho de Elena.
+—Sí, mi señor. Se llama Elena —respondió Innes—. Es joven y sana. Generará buen calor.
+—Déjanos —ordenó el Duque.
+Innes salió, cerrando la puerta con un golpe seco que sonó a sentencia. Elena se quedó sola con el hombre al que debía calentar. Se abrazó a sí misma, sin saber qué hacer.
+—No te quedes ahí parada respirando como un conejo asustado —dijo Alaric, todavía mirando al techo—. Acércate. Déjame oírte.
+Elena avanzó con pasos cautelosos. —Buenas noches, Su Gracia. Soy Elena Ross.
+Alaric giró la cabeza lentamente. Sus ojos "ciegos" pasaron sobre ella. Elena no sabía que, en ese preciso instante, él la estaba viendo. Y lo que veía lo perturbaba. Esperaba a una matrona entrada en carnes, o a una sirvienta tosca. No esperaba a una joven con una belleza etérea, de cabello castaño rojizo que brillaba a la luz del fuego y una piel que parecía hecha de porcelana y crema. Vio la curva de su cuello, la modestia de su vestido remendado, el temblor de sus manos. Sintió una punzada de culpa por lo que iba a hacerla pasar, pero también una curiosidad instintiva.
+—Innes te habrá explicado tus deberes —dijo él con frialdad—. Te quitarás los zapatos y el vestido exterior. Te pondrás un camisón limpio que hay en el baúl. Y te meterás en la cama. Tu lado es el izquierdo. No me toques más de lo necesario, y por el amor de Dios, no ronques.
+Elena tragó saliva. La frialdad de sus palabras la ayudó a recomponerse. No era un hombre, era un paciente. Un paciente grosero.
+—No ronco, mi señor —respondió ella con dignidad—. Y cumpliré con mi deber.
+Se dirigió al biombo en la esquina de la habitación para cambiarse. Alaric, desde la cama, tuvo que hacer un esfuerzo supremo para no mirar hacia la silueta que se proyectaba en la tela del biombo a contraluz del fuego. Sabía que podía verla desnudarse si quisiera. La tentación de mirar, de ver las formas de la mujer que compartiría su lecho, era una serpiente venenosa en su mente. Cerró los ojos con fuerza, maldiciendo su propia vista recuperada. Era un caballero, o lo que quedaba de uno. No la espiaría.
+Elena salió del biombo vestida con un camisón de franela blanca, sencillo y casto, pero que dejaba al descubierto sus pies descalzos y la línea elegante de sus brazos. Se acercó a la cama, sintiéndose como una mártir caminando hacia la hoguera. Levantó las pesadas mantas de piel y se deslizó en el colchón.
+El contacto con las sábanas frías la hizo estremecerse. Pero el verdadero impacto fue el cuerpo del Duque. A pesar de la supuesta "hipotermia", Alaric no estaba helado como un cadáver. Estaba... templado. Su cuerpo era una masa sólida y pesada que ocupaba la mayor parte del espacio. Elena se quedó en el borde, rígida como una tabla, tratando de no rozarlo.
+—Si te quedas en el borde, te caerás —gruñó Alaric—. Y no me servirás de nada si te congelas tú también. Acércate. Es una orden médica, no una invitación al pecado.
+Elena, mordiéndose el labio, se movió unos centímetros hacia el centro. Su hombro rozó el brazo de él. El contacto fue eléctrico. La piel de Alaric estaba dura, muscular. Elena sintió el calor que emanaba de él, y se preguntó confusamente por qué necesitaba una cuidadora si no parecía estar muriendo de frío. Pero recordó lo que le habían dicho de la mala circulación; tal vez el frío venía de dentro, un frío que ella no podía percibir al tacto superficial.
+—Buenas noches, Su Gracia —susurró ella, dándole la espalda y acurrucándose en posición fetal.
+Alaric no respondió. Estaba concentrado en controlar su propia respiración. Tener a esa mujer en su cama, oliendo a jabón de lavanda y a miedo, era una tortura que no había previsto. Durante meses, su cuerpo había estado dormido, o eso creía. Pero ahora, con ella allí, sintió un despertar. Sus piernas, que supuestamente no sentían nada, registraban el peso del cuerpo de ella hundiendo el colchón. Su olfato se llenaba de su esencia. Y su vista, en la penumbra, se clavaba en la nuca expuesta de Elena, en los mechones sueltos sobre su almohada.
+La noche avanzó. La tormenta exterior golpeaba los muros de Dunvegan, pero dentro, el silencio era absoluto. Elena, agotada por el viaje, finalmente venció al miedo y cayó en un sueño profundo.
+Alaric permaneció despierto. Vigilaba. Siempre vigilaba. Pero esa noche, su vigilancia no estaba dirigida a la puerta por miedo a su tío, sino a la mujer que dormía a su lado. La vio relajarse. La vio girarse en sueños.
+Y entonces sucedió. Buscando calor inconscientemente, Elena se movió hacia atrás. Su espalda chocó contra el pecho de Alaric. Sus nalgas se acomodaron contra la cadera del Duque. Fue un encaje perfecto, íntimo, devastador.
+Alaric dejó de respirar. Sintió cada curva de ella contra su cuerpo. Sintió el calor suave y vivo de una mujer, algo que pensó que nunca volvería a tener. Su reacción física fue inmediata e involuntaria. Su cuerpo, traicionando su supuesta parálisis, respondió al estímulo con una fuerza viril que le causó dolor y placer a la vez.
+Quiso apartarse. Quiso empujarla. Pero no lo hizo. Una parte oscura y necesitada de él se rebeló contra la lógica. Estaba solo. Estaba rodeado de enemigos. Y por primera vez en un año, tenía algo cálido y suave a lo que aferrarse.
+Lentamente, con un movimiento que requirió un control milimétrico para no despertarla, Alaric movió su pierna derecha. La pierna "muerta". La deslizó sobre las piernas de ella, atrapándola, anclándola a él. Fue un gesto posesivo, primitivo. Le dijo a su conciencia que era para evitar que ella se cayera, o para robarle más calor. Pero en el fondo, sabía la verdad. Quería sentirla. Quería saber que estaba ahí.
+Elena suspiró en sueños y se relajó aún más bajo el peso de la pierna de él, sintiéndose protegida.
+Alaric cerró los ojos, inhalando el aroma de su cabello. Sabía que estaba jugando con fuego. Si ella despertaba y se daba cuenta de que él la estaba reteniendo con una extremidad que no debería poder mover, el juego terminaría. Ella gritaría. Su tío se enteraría.
+Pero el Duque de Dunvegan, el hombre de hielo, decidió arriesgarse. Por esa noche, solo por esa noche, se permitiría la ilusión de no estar solo.
+Lo que no sabía era que esa pequeña transgresión era el comienzo de una adicción. Y que Elena Ross no era una simple enfermera, sino una mujer observadora que pronto empezaría a notar que el "bulto inerte" en su cama tenía reacciones demasiado humanas para ser solo carne muerta.
+La primera noche había pasado, pero la trampa acababa de cerrarse sobre ambos.
+Si la tensión de este primer encuentro te ha dejado sin aliento, prepárate. El próximo acto subirá la temperatura y el peligro. La rutina nocturna se convertirá en un campo minado de sensaciones, y Elena comenzará a sospechar que su paciente esconde mucho más que una enfermedad. ¿Qué pasará cuando ella intente probar si él realmente no siente nada? Deja en los comentarios la palabra "Calor" si crees que Alaric ya está perdido por ella.
+El amanecer se filtró en la habitación del Duque de Dunvegan como una intrusión de luz grisácea y fría, disipando las sombras que habían amparado los secretos de la noche. Elena Ross despertó lentamente, emergiendo de un sueño profundo y sin pesadillas, algo que no había experimentado desde la muerte de su padre. Se sentía extrañamente segura, envuelta en una calidez pesada y reconfortante que contrastaba con el aire gélido de la mañana escocesa. Sin embargo, cuando su mente terminó de despejarse, la realidad de su posición la golpeó con la fuerza de un cubo de agua helada. No estaba en su cama solitaria. Estaba en la cama del Duque. Y no estaba simplemente acostada a su lado; estaba atrapada.
+La pierna derecha de Alaric, esa extremidad que los médicos habían declarado inútil y muerta, estaba cruzada sobre las piernas de Elena, anclándola al colchón con un peso sólido y autoritario. Su brazo, pesado y musculoso, rodeaba su cintura, manteniéndola pegada contra su costado. Elena tenía la cara enterrada en el hombro del Duque, respirando su olor a sándalo y piel limpia. Su primera reacción fue el pánico. Intentó moverse, deslizarse hacia fuera, pero el agarre era firme.
+—¿Señor? —susurró ella, con el corazón martilleando contra sus costillas—. Su Gracia, despierte.
+Alaric no se movió. Su respiración seguía siendo rítmica y profunda, la de un hombre sumido en el sueño de los justos. O de los grandes farsantes. Porque Alaric estaba despierto. Llevaba despierto desde que el primer rayo de sol tocó la ventana, disfrutando egoístamente de la sensación de tenerla entre sus brazos. Sabía que debía soltarla. Sabía que si ella descubría que él era quien la retenía activamente, su coartada se desmoronaría. Pero su cuerpo se rebelaba. Después de meses de vacío, tenerla allí se sentía como respirar oxígeno puro tras haber estado bajo el agua.
+Elena, creyendo que se trataba de un peso muerto imposible de mover por la propia voluntad del paciente, hizo un esfuerzo físico para liberarse. Empujó la pierna de él con ambas manos. Era pesada, como un tronco de roble. Alaric, sintiendo su lucha y sabiendo que no podía prolongar la farsa sin ser descubierto, "despertó" con un gruñido de desorientación fingida.
+—¿Qué... qué demonios haces moviéndote tanto? —masculló, retirando el brazo y la pierna con una lentitud calculada, como si sus extremidades fueran lastres que apenas podía controlar.
+Elena se sentó de golpe en la cama, con el cabello revuelto y las mejillas ardiendo. Se ajustó el camisón, sintiéndose expuesta.
+—Lo siento, Su Gracia. Estaba... estaba atrapada. Su pierna estaba sobre mí.
+Alaric mantuvo los ojos fijos en el dosel, ocultando la chispa de diversión y deseo que brillaba en ellos. —Espasmos —dijo secamente—. Los músculos muertos a veces se contraen. No te hagas ideas, niña. No tengo interés en retenerte más de lo necesario para no congelarme.
+Elena bajó la mirada, avergonzada por su propia vanidad al pensar que había sido un abrazo. —Por supuesto, señor. Fue un reflejo. Voy a... voy a vestirme y a llamar a la señora Innes.
+Saltó de la cama y corrió hacia el biombo. Alaric giró la cabeza levemente, permitiéndose ver su silueta a contraluz una vez más antes de volver a su papel de estatua ciega. Esa mañana, mientras ella se vestía, Alaric hizo un juramento silencioso: la recuperaría. Recuperaría sus piernas, recuperaría su fuerza y recuperaría su título de las garras de su tío, todo para poder abrazarla algún día sin tener que mentir sobre ello.
+Los días se convirtieron en semanas, y la extraña rutina de Dunvegan se solidificó. Elena pasaba las noches en la cama del Duque y los días cuidándolo. Pero algo estaba cambiando. La barrera de hielo entre ellos comenzaba a derretirse. Alaric, aburrido de su propio silencio y cautivado por la presencia de ella, empezó a hablar. Ya no eran solo órdenes gruñidas. Eran preguntas. Preguntas sobre los libros que ella leía en voz alta para pasar el tiempo, preguntas sobre su vida en el campo, preguntas sobre sus sueños.
+Elena, sorprendida por la inteligencia aguda y el humor seco que se escondían bajo la amargura del Duque, comenzó a responder con sinceridad. Descubrió que le gustaba hablar con él. Le gustaba cómo él escuchaba cada palabra, cómo recordaba detalles triviales que ella había mencionado días atrás. Se encontró a sí misma guardando las mejores anécdotas del día para contárselas por la noche, en la oscuridad de la habitación, cuando las máscaras sociales caían.
+Una noche de tormenta particularmente violenta, mientras yacían juntos bajo las mantas, Elena confesó su mayor miedo.
+—A veces pienso que mi padre murió de tristeza —susurró ella, trazando patrones invisibles en la sábana sobre el pecho de Alaric—. No pudo salvar a sus pacientes de la epidemia, y eso lo rompió. Tengo miedo de ser igual. Tengo miedo de no poder salvar a nadie.
+Alaric, que había estado escuchando el ritmo de su corazón, sintió una opresión en el pecho. Quiso decirle que ella ya lo había salvado a él. Que su calor había hecho más que cualquier medicina.
+—No eres tu padre, Elena —dijo él, su voz vibrando en la oscuridad—. Y no todos los pacientes están condenados. Algunos son solo... obstinados.
+—Usted es muy obstinado, mi señor —replicó ella con una sonrisa que se podía oír en su voz.
+—Soy escocés —se defendió él—. La obstinación es nuestro patrimonio nacional.
+Se rieron, un sonido suave y cómplice que murió cuando Elena, en un gesto de confianza inconsciente, apoyó la mano sobre el abdomen de Alaric. El Duque se tensó. Los músculos de su estómago se contrajeron bajo la palma de ella, duros y reactivos.
+Elena retiró la mano, sorprendida. Había sentido la contracción. Una reacción rápida, fuerte.
+—Se ha movido —dijo ella, incorporándose sobre un codo para mirarlo—. Su estómago. Se tensó cuando lo toqué.
+Alaric maldijo internamente. Su cuerpo lo traicionaba. La sensibilidad había vuelto a su torso hacía semanas, y el toque de ella era fuego.
+—Indigestión —mintió él rápidamente—. La sopa de Innes estaba fría.
+—No parecía indigestión —insistió ella, frunciendo el ceño—. Parecía un reflejo muscular. Su Gracia, si tiene sensibilidad... eso significa que la médula no está seccionada. Significa que podría haber esperanza. Deberíamos llamar al médico.
+—¡No! —El grito de Alaric fue tan repentino y feroz que Elena saltó. Se dio cuenta de su error y bajó el tono, intentando sonar cansado y no aterrorizado—. No quiero más médicos, Elena. No quiero más agujas ni falsas esperanzas. Ya he tenido suficiente. Déjalo estar.
+Elena se recostó, obedeciendo, pero la duda había sido sembrada. No era tonta. Era hija de un médico. Sabía la diferencia entre un espasmo gástrico y una contracción muscular voluntaria o refleja ante el tacto. Se quedó despierta mucho tiempo después de que Alaric fingiera dormirse, observando su perfil en la penumbra, preguntándose cuántos secretos escondía el Duque de Dunvegan bajo sus sábanas de seda.
+La amenaza externa no tardó en manifestarse. Lord Héctor, el tío del Duque, llegó al castillo dos días después. Era un hombre corpulento, de rostro rubicundo y ojos pequeños y codiciosos que miraban todo en Dunvegan como si ya le perteneciera. Entró en la habitación de Alaric sin llamar, trayendo consigo un olor a brandy rancio y perros mojados.
+Alaric, que estaba sentado en su silla de ruedas frente a la ventana (una concesión que había hecho para no volverse loco en la cama todo el día), sintió que se le erizaba el vello de la nuca. Odió no poder ponerse de pie y echar a su tío a patadas. Odió tener que mantener la mirada fija en el vacío mientras Héctor se paseaba por la habitación, tocando sus cosas.
+—Sobrino —saludó Héctor con una jovialidad falsa—. Te veo... igual. Me temo que los informes sobre tu mejoría eran exagerados.
+—No sé quién te envía informes, tío, pero yo no he mejorado —respondió Alaric secamente—. Sigo siendo el mismo mueble costoso que dejaste la última vez.
+Héctor se rió y se acercó a Elena, que estaba de pie junto a la chimenea, arreglando unos frascos. La miró de arriba abajo con una lascivia descarada que hizo que a Alaric le hirviera la sangre.
+—Y esta debe ser la famosa "calentadora" —dijo Héctor, acercándose a ella—. Vaya, vaya. Innes tiene buen ojo. Eres una potranca fina, muchacha. Demasiado fina para desperdiciarte en un hombre que no puede... apreciar la montura.
+Elena se puso rígida, apretando el frasco que tenía en la mano. —Soy la cuidadora del Duque, mi lord.
+—Cuidadora, enfermera, calientacamas... los nombres importan poco —dijo Héctor, extendiendo una mano para tocar el brazo de Elena.
+En ese instante, Alaric vio rojo. Literalmente. Su visión periférica captó el movimiento de la mano de su tío hacia Elena. Sus manos, que descansaban sobre los reposabrazos de la silla, se cerraron en puños de hierro. Los nudillos se pusieron blancos. Sus piernas, ocultas bajo una manta, se tensaron, listas para impulsarlo. Estuvo a un segundo, a un milímetro, de saltar de la silla y estrangular a Héctor.
+Pero Elena reaccionó antes. Dio un paso atrás, esquivando la mano de Héctor con frialdad.
+—Si me toca, mi lord, tendré que informar al Duque de que su tío está molestando al personal médico, lo cual podría alterar su delicado estado nervioso. Y el doctor ha dicho que cualquier alteración podría ser fatal. No querrá usted ser responsable de la muerte prematura de su sobrino, ¿verdad? La investigación sería... tediosa.
+Héctor retiró la mano, sorprendido por la audacia de la joven. Miró a Alaric, luego a Elena, y soltó una carcajada forzada.
+—Tienes garras, gatita. Me gusta. —Se volvió hacia Alaric—. Cuídala bien, sobrino. O mejor aún, cuando te canses de ella, envíamela a la torre oeste. Yo sabré darle un uso más... activo.
+Héctor salió de la habitación, dejando tras de sí una estela de amenaza.
+Cuando la puerta se cerró, el silencio en la habitación era denso. Alaric estaba temblando. No de miedo, sino de la contención brutal que había tenido que ejercer sobre su propio cuerpo. Elena se acercó a él, preocupada.
+—¿Está bien, Su Gracia? Está pálido.
+Alaric no la miró. No podía. Si la miraba ahora, con la furia y el deseo mezclados en sus ojos, ella lo sabría todo. Sabía que Héctor volvería. Sabía que su tío estaba impaciente. Y sabía que Elena estaba en peligro por el simple hecho de estar cerca de él.
+—Acércate —dijo él con voz ronca.
+Elena se arrodilló junto a su silla. —¿Qué necesita? ¿Agua? ¿Medicina?
+—Necesito que me prometas algo —dijo Alaric, girando la cabeza hacia ella, manteniendo los ojos desenfocados con un esfuerzo supremo—. Mantente lejos de él. Si vuelve a entrar cuando estás sola, sal. Corre. No te enfrentes a él. Héctor es un animal. No tiene honor.
+—No le tengo miedo —dijo Elena valientemente.
+—Deberías —replicó él—. Porque yo no puedo protegerte. Soy un tullido, ¿recuerdas?
+La amargura en su voz era palpable. Elena miró sus manos, las manos del Duque, que seguían apretadas sobre los reposabrazos. Notó la tensión en sus antebrazos. Notó la fuerza contenida. Y la duda volvió a asaltarla, más fuerte que antes. Un hombre paralizado no tiene esa tensión muscular. Un hombre derrotado no tiembla de rabia contenida; tiembla de miedo.
+Esa noche, Elena decidió que necesitaba saber la verdad. No por curiosidad, sino por supervivencia. Si Héctor era una amenaza, necesitaba saber si su único aliado en el castillo era realmente un inválido o si estaba fingiendo.
+Esperó a que estuvieran en la cama. La oscuridad era su cómplice. Alaric parecía dormido, su respiración regular. Elena se movió con cuidado. Deslizó su mano bajo las sábanas, no hacia su pecho como solía hacer, sino hacia abajo. Hacia su pierna.
+Alaric sintió el movimiento. Se tensó, pero se obligó a permanecer inmóvil. ¿Qué haces, Elena?, pensó.
+La mano de Elena llegó a su muslo. No fue un toque médico. Fue una caricia suave, exploratoria. Sus dedos trazaron la línea del músculo cuádriceps. Estaba duro. Fuerte. No atrofiado como el de un hombre que lleva un año sin caminar.
+Elena subió un poco más. Sus dedos rozaron la piel sensible de la cara interna del muslo.
+Alaric dejó de respirar. Fue una reacción instintiva. El placer y la sorpresa se mezclaron. Su cuerpo, traicionero y vivo, respondió. El músculo bajo la mano de Elena saltó. Se contrajo visiblemente.
+Elena detuvo su mano. Lo había sentido. No había duda.
+—Alaric... —susurró ella en la oscuridad, su voz temblando.
+Él no respondió. Mantuvo los ojos cerrados, rezando para que ella lo dejara estar.
+Pero Elena no se detuvo. Movida por una intuición temeraria, hizo algo más. Clavó una uña, solo un poco, en la piel de su muslo. Un estímulo doloroso.
+La pierna de Alaric se sacudió. Fue un reflejo defensivo. Se apartó del dolor.
+El silencio que siguió fue atronador. Elena retiró la mano lentamente. Se incorporó en la cama, mirando la silueta del Duque.
+—Lo sentiste —dijo ella. No era una pregunta. Era una acusación y una revelación—. Moviste la pierna. Te dolió.
+Alaric abrió los ojos en la oscuridad. Ya no tenía sentido. La había subestimado. O tal vez, en el fondo, quería que ella lo supiera.
+—Sí —dijo él, su voz grave rompiendo el último velo de su secreto—. Lo sentí.
+Elena contuvo el aliento. —¿Desde cuándo?
+—Desde hace meses —confesó él—. Pero nunca... nunca como contigo.
+Se giró hacia ella. En la penumbra, sus ojos brillaban.
+—Puedes moverte —susurró ella, retrocediendo hacia el borde de la cama, asustada por la magnitud de la mentira—. Puedes ver. Me has estado mintiendo todo este tiempo.
+—Te he estado protegiendo —corrigió él, sentándose en la cama, moviendo su torso con una fluidez que la dejó atónita—. Y me he estado protegiendo a mí mismo. Si Héctor supiera que puedo caminar, me habría matado en mi sueño hace semanas.
+—¿Y yo? —preguntó ella, dolida—. ¿Qué soy yo en este juego? ¿Una pieza más? ¿Me has usado para calentarte mientras te reías de mi ingenuidad?
+—No —dijo Alaric, y extendió la mano para atrapar la muñeca de ella antes de que pudiera huir de la cama. Su agarre era fuerte, cálido, vivo—. Nunca me he reído de ti, Elena. Tú fuiste la que me trajo de vuelta. Antes de que llegaras, podía moverme, sí, pero estaba muerto por dentro. Tú me diste una razón para querer levantarme.
+Tiró de ella suavemente, acercándola a él. Elena se resistió un momento, pero la sinceridad en la voz de él, la vulnerabilidad en sus ojos, la desarmó.
+—Pero ahora lo sabes —dijo Alaric—. Y eso te pone en un peligro terrible. Héctor no es estúpido. Si sospecha que sabes algo, irá a por ti.
+—¿Qué hacemos? —preguntó ella, sintiendo que el mundo de la mansión se volvía aún más pequeño y peligroso.
+—Seguimos fingiendo —dijo Alaric—. Ante Innes, ante Héctor, ante todos... soy un tullido. Pero aquí, en esta cama... —Alaric levantó la mano de ella y la puso sobre su corazón, que latía fuerte y rápido—. Aquí somos aliados. Y te juro, Elena, que voy a usar cada gramo de fuerza que he recuperado para destruir a mi tío y liberarnos a ambos.
+Elena sintió el latido bajo su mano. Sintió la verdad del hombre. Y supo que ya no había vuelta atrás. Estaba atrapada entre las piernas del Duque, sí, pero también estaba atrapada en su guerra y, lo más peligroso de todo, en su corazón.
+—Aliados —susurró ella.
+Pero Alaric no se conformó con eso. Se inclinó hacia adelante, reduciendo la distancia entre sus rostros hasta que sus alientos se mezclaron.
+—Y algo más —añadió él—. Porque ahora que sabes que puedo sentir... no pienso desperdiciar ni una sola de tus caricias.
+La tensión romántica estalló en la habitación, más fuerte que cualquier tormenta. Pero el peligro acechaba al otro lado de la puerta. Héctor estaba planeando su movimiento, y Alaric y Elena tendrían que jugar la partida más peligrosa de sus vidas: una partida donde un solo gesto delator podría significar la muerte.
+Si la confesión de Alaric te ha acelerado el pulso, no te pierdas el próximo acto. La complicidad entre ellos se volverá un arma y una tentación. Tendrán que engañar a todos a plena luz del día, mientras sus noches se vuelven un refugio de pasión contenida y estrategia. Pero Héctor tiene una última carta bajo la manga, una prueba cruel para desenmascarar al Duque. ¿Podrá Alaric soportar ver sufrir a Elena sin romper su personaje? Deja en los comentarios la palabra "Aliados" si crees que juntos son invencibles.
+La confesión de Alaric en la oscuridad de la habitación transformó el aire viciado de Dunvegan en algo eléctrico y vibrante. Elena Ross seguía sentada en la cama, con el corazón desbocado, procesando la realidad de que el hombre bajo las sábanas no era un inválido indefenso, sino un guerrero herido que había elegido el silencio como armadura. La mano de Alaric seguía sosteniendo la suya, un ancla caliente y firme en medio de la tormenta de secretos. No había vuelta atrás. Ahora eran conspiradores.
+—Tenemos que ser muy cuidadosos —susurró Alaric, soltando su mano para acariciar su rostro con una reverencia que hizo temblar a Elena—. Héctor no es un necio. Si sospecha que he recuperado la movilidad, o que puedo ver, actuará rápido. Su plan depende de mi muerte lenta y "natural". Un Duque que se recupera es una amenaza que debe ser eliminada.
+Elena asintió, secándose una lágrima de la mejilla. El miedo seguía ahí, agazapado en su estómago, pero ahora estaba mezclado con una determinación feroz. —Dime qué tengo que hacer. Seré tus ojos y tus piernas donde tú no puedas llegar.
+—Por ahora, sigue siendo mi enfermera —instruyó él—. Sigue tratándome como a un tullido frente a Innes y los demás. Pero de noche... de noche me ayudarás a prepararme. Mis músculos están despiertos, Elena, pero están débiles. Necesito fuerza para cuando llegue el momento de enfrentar a mi tío. Y necesito que tú seas mi soporte.
+Esa noche marcó el inicio de una doble vida dentro de las murallas del castillo. Durante el día, bajo la mirada escrutadora de la señora Innes y las visitas esporádicas y malintencionadas de Lord Héctor, Alaric representaba su papel a la perfección. Permanecía inmóvil, con la mirada vacía fija en la nada, soportando comentarios crueles y manipulaciones con una estoicidad de piedra. Elena lo lavaba, lo alimentaba y le leía, actuando la parte de la cuidadora resignada, aunque por dentro hervía de rabia cada vez que veía la sonrisa de suficiencia del tío.
+Pero cuando caía la noche y la puerta se cerraba con llave, la habitación se convertía en un campo de entrenamiento clandestino. Elena ayudaba a Alaric a salir de la cama. El proceso era agotador y doloroso. Alaric apretaba los dientes para no gritar mientras sus piernas, temblorosas por la atrofia, soportaban su peso. Se apoyaba en los hombros de Elena, usando su cuerpo como muleta, mientras daban pasos lentos y arrastrados por la alfombra gruesa.
+—Más —jadeaba él, con el sudor empapando su camisa de dormir—. Un paso más.
+—Estás agotado, Alaric —susurraba ella, sosteniéndolo con fuerza, sintiendo la tensión de cada músculo de él contra su propio cuerpo—. Si te caes, se oirá el golpe.
+—No me caeré. No mientras tú me sostengas.
+Esas sesiones nocturnas forjaron una intimidad que iba más allá de lo físico. En los descansos, sentados en el suelo para recuperar el aliento, Alaric le hablaba de sus planes para el ducado, de cómo quería expulsar a los corruptos y devolver la dignidad a sus tierras. Elena le hablaba de medicina, de las hierbas que podrían ayudar a aliviar sus dolores musculares sin dormirlo como el láudano. Se tocaban, se miraban, se redescubrían. Alaric, con su vista recuperada, se dedicaba a memorizar cada expresión de Elena: la forma en que mordía su labio cuando se concentraba, el brillo dorado en sus ojos avellana, la curva suave de su sonrisa cansada.
+Una noche, después de una sesión particularmente dura, Alaric cayó sentado en la cama, respirando con dificultad. Elena se arrodilló entre sus piernas para masajear sus muslos doloridos. Alaric la miró desde arriba, con una intensidad que hizo que las manos de ella se detuvieran.
+—Eres hermosa, Elena —dijo él, con voz ronca—. No tienes idea de lo difícil que es fingir que no te veo durante el día. Fingir que no me importa cuando Héctor te mira.
+Elena levantó la vista, sonrojada. —¿Me mira?
+—Te mira como un lobo mira a un cordero —dijo Alaric, y su voz se endureció—. Y te juro que si intenta tocarte, olvidaré el plan y le arrancaré la mano, aunque me cueste la vida.
+—No hará nada —dijo ella, tratando de calmarlo, aunque ella misma había notado las miradas lascivas del tío—. Me mantengo lejos de él.
+Pero la precaución no fue suficiente. Lord Héctor, frustrado porque la salud del Duque no empeoraba y sospechando que la "enfermera" estaba haciendo demasiado bien su trabajo, decidió aumentar la presión. No podía atacar al Duque directamente sin levantar sospechas, pero podía atacar su entorno.
+Tres días después, Héctor interceptó a Elena en el pasillo, lejos de la protección de la habitación del Duque.
+—Señorita Ross —dijo Héctor, bloqueándole el paso con su cuerpo corpulento—. He estado revisando los gastos. Sus servicios son... costosos. Y el Duque no mejora. Empiezo a pensar que usted es un lujo innecesario.
+—El Duque necesita cuidados constantes, mi lord —respondió Elena, manteniendo la mirada baja pero la voz firme—. Sin ellos, su estado se deterioraría rápidamente.
+—Tal vez eso es lo que Dios quiere —dijo Héctor con una sonrisa fría—. Pero tengo una propuesta. Podría mantener su empleo... y quizás mejorar su salario... si estuviera dispuesta a cuidar de mis necesidades también. Mi habitación está en el ala oeste. Es mucho más cálida que la del Duque. Y yo estoy muy vivo.
+La insinuación era clara y repugnante. Elena sintió náuseas. —Soy enfermera, mi lord. No una cortesana. Mi lealtad es para con mi paciente.
+Héctor la agarró del brazo, sus dedos clavándose en su carne. —Tu lealtad debería ser con quien paga las cuentas. Piénsalo, niña. El Duque es un cadáver que respira. Yo soy el futuro. No querrás estar en el bando perdedor cuando él deje de respirar.
+Elena se soltó de un tirón y corrió hacia la habitación de Alaric, cerrando la puerta y echando el cerrojo con manos temblorosas. Alaric, que estaba sentado en la cama fingiendo leer un libro en Braille (una farsa más), notó su agitación al instante. Se quitó las gafas oscuras y la miró con preocupación.
+—¿Qué ha pasado? —preguntó, poniéndose de pie con una agilidad que sorprendió a ambos.
+Elena le contó lo sucedido. Alaric escuchó en silencio, pero su rostro se transformó. La máscara de paciencia se rompió, revelando al guerrero letal que había debajo. Empezó a caminar por la habitación, sin bastón, sin apoyo, impulsado por la furia.
+—Lo voy a matar —gruñó—. Se acabó el fingir. Voy a bajar ahora mismo y...
+—¡No! —Elena se interpuso en su camino, poniéndole las manos en el pecho para detenerlo—. Si lo haces ahora, perderás la ventaja. Tiene guardias, Alaric. Tiene a Innes. Dirán que te has vuelto loco y te encerrarán. Tienes que esperar. Tienes que estar más fuerte.
+Alaric cubrió las manos de ella con las suyas. Estaba temblando de rabia. —No puedo soportar que te amenace. No puedo soportar ser un prisionero en mi propia casa mientras él te acorrala en los pasillos.
+—Estoy bien —dijo ella, mirándolo a los ojos—. Estoy aquí, contigo. Y la puerta está cerrada. Solo necesitamos un poco más de tiempo.
+Alaric la abrazó, enterrando el rostro en su cuello. —Tiempo... se nos acaba el tiempo, Elena. Héctor está impaciente. Si no consigue corromperte, intentará eliminarme por la fuerza. Tengo que estar listo.
+Esa noche, el entrenamiento fue brutal. Alaric se exigió al límite, ignorando el dolor, ignorando el cansancio. Elena lo miraba con una mezcla de admiración y miedo. Sabía que se estaba preparando para una batalla. Y sabía que esa batalla llegaría pronto.
+Lo que no sabían era que Héctor ya había hecho su movimiento. Al ver que Elena no cedía y que el Duque seguía obstinadamente vivo, el tío había decidido traer ayuda externa. Había enviado un mensaje a un viejo conocido, un médico desacreditado con una reputación siniestra por sus métodos "experimentales".
+La mañana siguiente amaneció con una atmósfera pesada, presagio de tormenta. Elena estaba ayudando a Alaric a afeitarse cuando escucharon el ruido de un carruaje en el patio. Alaric se tensó, la navaja deteniéndose en su mejilla.
+—¿Esperamos a alguien? —preguntó Elena.
+—No —dijo Alaric, caminando hacia la ventana y mirando a través de una rendija de la cortina—. Pero Héctor ha estado muy sonriente esta mañana.
+Abajo, en el patio, un hombre bajo y calvo descendía del carruaje, llevando un maletín de cuero negro. Alaric no reconoció el rostro, pero reconoció el tipo de hombre. Era un depredador. Un mercenario de la medicina.
+—Elena —dijo Alaric, volviéndose hacia ella con urgencia—. Escúchame bien. Sea quien sea ese hombre, viene a hacerme daño. Héctor quiere probar si realmente estoy paralizado o si estoy fingiendo. O tal vez quiere acelerar mi final.
+—No dejaré que te toquen —dijo ella valientemente.
+—No podrás detenerlos —dijo él, tomándola por los hombros—. Son hombres fuertes y crueles. Si intentan algo... si intentan lastimarme para ver si reacciono... prométeme que no intervendrás. Prométeme que te quedarás quieta y callada.
+—¿Qué? ¡No! Si te hacen daño...
+—Si intervienes, sabrán que te importo —la cortó él—. Y entonces te usarán contra mí. Mi única defensa es que crean que soy un vegetal insensible. Si me clavan un cuchillo y yo no grito, dudarán. Pero si tú gritas... si tú lloras... sabrán que tengo un punto débil. Y ese punto débil eres tú.
+Elena negó con la cabeza, las lágrimas brotando en sus ojos. —No me pidas eso. No me pidas que vea cómo te torturan y no haga nada.
+—Te lo pido porque te amo —confesó Alaric. Las palabras salieron de su boca antes de que pudiera pensarlas, crudas y verdaderas.
+Elena se quedó helada. Él la amaba. El Duque de Dunvegan la amaba.
+—Te amo —repitió él, acariciando su mejilla—. Y prefiero morir de dolor en silencio que verte sufrir por mi culpa. Prométemelo, Elena. Prométeme que aguantarás.
+Se escucharon pasos pesados en el pasillo. Voces. La puerta se abrió sin llamar.
+Elena miró a Alaric. Vio la súplica en sus ojos. Vio el amor. Y supo que tenía que ser tan fuerte como él.
+—Lo prometo —susurró ella, justo antes de que Héctor entrara en la habitación, seguido por el hombre del maletín negro.
+Alaric corrió a la cama y se cubrió, asumiendo su postura de inmovilidad segundos antes de que los intrusos cruzaran el umbral.
+—Sobrino —tronó la voz de Héctor—. Te traigo una visita. El doctor Morvath ha venido desde Edimburgo para... evaluar tu condición. Dice que tiene métodos infalibles para despertar a los muertos.
+Alaric mantuvo los ojos fijos en el techo, pero su mano, oculta bajo la sábana, buscó la de Elena por un último segundo antes de soltarla. La prueba de fuego había llegado. Y ambos tendrían que sobrevivir al infierno sin quemarse.
+La mañana siguiente a la confesión de Alaric trajo consigo una transformación invisible pero radical en la atmósfera de la habitación ducal. Para cualquier observador externo, como la severa señora Innes o el propio Lord Héctor, nada había cambiado: el Duque seguía postrado en su cama, pálido y con la mirada vacía fija en el techo, mientras su enfermera se movía a su alrededor con eficiencia silenciosa, administrando medicinas y ajustando almohadas. Sin embargo, bajo la superficie de esa rutina inalterada, corría una corriente eléctrica de complicidad que unía a Alaric y Elena más fuerte que cualquier cadena.
+Cada gesto tenía ahora un doble significado. Cuando Elena le levantaba la cabeza para darle de beber, sus dedos rozaban la nuca de Alaric no solo con cuidado profesional, sino con una caricia deliberada que decía: estoy aquí, estamos juntos en esto. Cuando Alaric permitía que ella lo aseara, ya no era la rendición humillante de un inválido, sino un acto de confianza absoluta, dejando que su cuerpo reaccionara sutilmente al tacto de ella, tensando un músculo o relajando otro para facilitarle la tarea, un lenguaje secreto de piel contra piel que solo ellos entendían.
+Las noches, sin embargo, dejaron de ser solo para dormir. Se convirtieron en sesiones de entrenamiento clandestino y desesperado. Cuando el castillo quedaba en silencio y la última ronda de Innes había pasado, Alaric rompía su postura de estatua. Elena lo ayudaba a sentarse en el borde de la cama. El esfuerzo era monumental. Los músculos de Alaric, aunque despiertos, estaban atrofiados por meses de desuso forzado y fingido. Sudaba, temblaba, apretando los dientes para no emitir ningún sonido que pudiera alertar a los guardias del pasillo.
+Elena se convertía en su soporte humano. Se paraba frente a él, ofreciéndole sus hombros y sus manos como anclas.
+—Apóyate en mí —susurraba ella en la oscuridad—. No te dejaré caer.
+Alaric se aferraba a ella, inhalando su aroma para darse fuerzas, y se obligaba a ponerse de pie. Sus piernas temblaban violentamente bajo su peso. El dolor era agudo, como si le clavaran clavos en las rodillas, pero Alaric lo recibía con una sonrisa torva. Estaba de pie. Estaba mirando a Elena desde su altura real, dominándola físicamente, y eso le devolvía la sensación de poder que su tío le había robado.
+Daban pasos pequeños, arrastrados, desde la cama hasta la ventana y de vuelta. Era una danza lenta y dolorosa. A veces, las rodillas de Alaric cedían, y ambos terminaban cayendo sobre la alfombra gruesa, ahogando risas nerviosas y gemidos de dolor, enredados en un abrazo que rápidamente pasaba de la asistencia médica a la pasión contenida. En el suelo, a salvo en las sombras, Alaric aprovechaba para besarla, besos hambrientos y urgentes que servían de combustible para el día siguiente. Le prometía que pronto no necesitaría apoyarse en ella, que pronto sería él quien la cargara lejos de ese nido de víboras.
+Pero el tiempo no estaba de su lado. Lord Héctor, impaciente por la falta de deterioro de su sobrino y frustrado por la resistencia silenciosa de Elena, decidió cambiar de táctica. La mera existencia del Duque era un obstáculo para sus planes de venta de tierras y acumulación de poder. Si la naturaleza no seguía su curso, Héctor la empujaría.
+Tres días después de la revelación, Héctor irrumpió en la habitación acompañado de un hombre bajo y calvo, vestido con ropas oscuras y portando un maletín de aspecto siniestro.
+—Sobrino —anunció Héctor con una jovialidad macabra—. Te traigo buenas noticias. He traído al doctor Morvath, un especialista en casos... obstinados como el tuyo. Dice que tiene un tratamiento revolucionario para despertar los nervios muertos.
+Elena, que estaba ordenando la ropa de cama, sintió un escalofrío. Conocía la reputación de Morvath. No era un médico, era un carnicero conocido por sus métodos brutales basados en el dolor extremo para "estimular" el cuerpo.
+—No necesito más médicos, tío —dijo Alaric, manteniendo su mirada fija en la nada—. Déjame descansar.
+—Tonterías —replicó Héctor—. Como tu tutor legal, es mi deber probar todo. Doctor, proceda.
+Morvath abrió su maletín. No sacó medicinas. Sacó una serie de agujas largas y finas, y un pequeño brasero portátil que encendió con carbones.
+—El principio es simple, mi lord —explicó Morvath con voz chillona—. Si hay vida en las piernas, el fuego la encontrará. Si no la hay... bueno, el paciente no sentirá nada, así que no hay daño, ¿verdad?
+Iban a quemarlo. Iban a clavar agujas calientes en sus piernas para ver si reaccionaba.
+Elena dio un paso adelante, horrorizada. —¡No puede hacer eso! ¡Es una tortura!
+Héctor la detuvo con un brazo extendido, empujándola rudamente hacia atrás. —Tú calla, niña. O te haré probar el tratamiento a ti también.
+Alaric escuchó la amenaza a Elena y sintió la bilis subir por su garganta. Sabía que era una prueba. Héctor sospechaba. Quería ver si Alaric se rompía. Si gritaba, si se movía para defenderse, sabrían que estaba curado y lo matarían esa misma noche alegando locura o ataque. Si no se movía... tendría que soportar el infierno.
+—Haz lo que tengas que hacer —dijo Alaric con voz gélida—. Pero si tocas a la enfermera, Héctor, me aseguraré de que mi fantasma te persiga hasta la tumba.
+Héctor resopló. —Proceda, doctor.
+Morvath calentó la primera aguja hasta que la punta se puso al rojo vivo. Se acercó a los pies descalzos del Duque. Elena se llevó las manos a la boca para ahogar un grito, las lágrimas corriendo por su rostro. Quería lanzarse sobre ellos, detenerlos, pero la mirada de Alaric, captada en un breve instante en que giró la cabeza hacia ella, la detuvo. Sus ojos le decían: Resiste. No hagas nada.
+La aguja tocó la planta del pie de Alaric.
+El dolor fue cegador. El olor a carne quemada llenó el aire. El cuerpo de Alaric quiso arquearse, gritar, patear al médico en la cara. Pero su mente, forjada en la guerra, tomó el control. Se disoció. Se imaginó que estaba en un campo de batalla, lejos, observando a otro hombre sufrir. Apretó los puños bajo las sábanas hasta sangrarse las palmas, pero su rostro permaneció impasible, una máscara de mármol. No emitió ni un sonido. Ni un espasmo delató su agonía.
+Morvath clavó la aguja tres veces más. En el tobillo. En la pantorrilla. En el muslo.
+Cada vez, Alaric aguantó. Elena lloraba en silencio, temblando, sintiendo cada quemadura como si fuera suya.
+—Nada —dijo Morvath finalmente, decepcionado, limpiando la aguja—. Ni un reflejo. Está muerto de cintura para abajo, mi lord. Irrecuperable.
+Héctor miró a su sobrino con una mezcla de decepción y alivio sádico. —Qué pena. Bueno, al menos lo intentamos. Vámonos, doctor.
+Cuando salieron, Elena corrió hacia la cama. Levantó las sábanas y vio las quemaduras en las piernas de Alaric. Sollozó abiertamente, corriendo a buscar agua fría y ungüentos.
+—¿Por qué? —lloraba ella mientras aplicaba el bálsamo con manos temblorosas—. ¿Por qué no los detuviste? Podrías haberlo matado.
+Alaric estaba pálido, cubierto de sudor frío, respirando entrecortadamente. El dolor ahora, sin la adrenalina del momento, era atroz.
+—Porque te estaban mirando a ti —jadeó él—. Si yo reaccionaba... Héctor habría sabido que te importo. Y entonces te habría usado a ti para hacerme daño. Prefiero quemarme yo mil veces antes que ver cómo te tocan un pelo.
+Elena se inclinó y lo besó, un beso salado por las lágrimas, lleno de una devoción que la asustaba. —Eres un tonto. Un valiente y estúpido tonto.
+—Soy tu tonto —intentó bromear él, aunque hizo una mueca.
+Esa noche no hubo entrenamiento. Elena pasó la noche curando sus heridas, soplándole suavemente en la piel quemada, susurrándole palabras de amor y consuelo. Y Alaric, a pesar del dolor, se sintió el hombre más afortunado de la tierra. Pero sabía que el tiempo se había acabado. Héctor no se detendría. La prueba física había fallado, así que intentaría algo peor.
+Dos días después, la estrategia de Héctor cambió. Entendió que el Duque era un muro de piedra, así que decidió atacar los cimientos.
+Era la hora de la cena. Héctor ordenó que Elena bajara al comedor principal para servirle, alegando que el personal era escaso. Alaric se opuso, pero Héctor simplemente sonrió y dijo que si ella no bajaba, subiría él con sus guardias a buscarla. Alaric, atrapado en su cama, tuvo que ceder, pero deslizó una pequeña daga que guardaba bajo la almohada en el bolsillo del delantal de Elena antes de que ella se fuera.
+—Si intenta algo... —susurró él—... no dudes. Apunta al cuello.
+Elena bajó al comedor con el corazón en la garganta. La mesa estaba puesta para uno. Héctor comía un faisán asado, bebiendo vino en exceso. La miró entrar con esa mirada de depredador que le helaba la sangre.
+—Siéntate, Elena —ordenó él, señalando una silla a su lado.
+—Prefiero estar de pie, mi lord. Mi lugar es servir.
+—Tu lugar es donde yo diga que es —golpeó la mesa—. Siéntate. Quiero proponerte un trato.
+Elena se sentó en el borde de la silla, lista para correr.
+—Sé que le tienes cariño al tullido —dijo Héctor, limpiándose la grasa de la boca—. Es conmovedor. Pero seamos realistas. Él es un cadáver que respira. Yo soy el futuro Duque. Y soy un hombre con... apetitos.
+Se inclinó hacia ella. —Deja de jugar a la enfermera. Ven a mi habitación esta noche. Sé amable conmigo. Y te aseguro que cuando Alaric muera... lo cual será pronto... tendrás una posición cómoda en esta casa. Quizás incluso como mi amante oficial. De lo contrario... —Héctor sacó un papel de su bolsillo—. De lo contrario, tengo aquí una orden de arresto firmada por el juez local. Acusación: robo de joyas de la familia. Tengo un collar en mi bolsillo que "aparecerá" misteriosamente en tu habitación. Te colgarán, Elena. O te enviarán a las colonias.
+Elena miró al hombre repugnante frente a ella. Sintió el peso de la daga en su bolsillo. Pero sabía que si lo mataba, la colgarían igual, y dejaría a Alaric solo.
+—No —dijo ella con voz firme—. No me venderé a usted. Y no traicionaré al Duque. Haga lo que quiera con sus papeles falsos.
+Héctor se puso rojo de ira. Se levantó y agarró a Elena por la muñeca, tirando de ella hacia él. —¡Pequeña zorra ingrata! ¡Te enseñaré a respetarme!
+Elena luchó, intentando sacar la daga, pero Héctor era fuerte. La arrastró hacia la puerta, gritando a sus guardias.
+—¡Llevadla a la torre! —gritó—. ¡Y que nadie le dé agua ni comida! Mañana la entregaremos al juez. Pero antes... antes le enseñaré modales.
+En la habitación de arriba, Alaric escuchó los gritos. Su oído, agudizado por meses de oscuridad, captó la voz de Elena gritando "¡No!" y el sonido de un forcejeo.
+Algo se rompió dentro de él. La prudencia, la estrategia, el miedo a ser descubierto... todo se evaporó ante el sonido del terror de Elena.
+Se arrancó las sábanas. Se sentó en la cama. Sus piernas quemaban donde las agujas lo habían herido, pero el dolor era irrelevante. Se puso de pie. Se tambaleó, agarrándose al dosel. Sus piernas eran débiles, pero su furia era infinita.
+Caminó hacia la puerta. Cada paso era una victoria y una agonía. Abrió la puerta de su habitación. El pasillo estaba vacío; los guardias estaban abajo con Héctor.
+Alaric avanzó hacia la escalera. Se apoyó en la barandilla de piedra, respirando pesadamente. Miró hacia abajo, al vestíbulo. Vio a Héctor arrastrando a Elena hacia la salida que llevaba a la torre. Vio a Elena luchando, llorando.
+—¡Héctor! —el grito de Alaric fue un trueno que sacudió los cimientos de Dunvegan.
+Abajo, Héctor se detuvo y miró hacia arriba. Elena también miró.
+Lo que vieron los dejó paralizados.
+En lo alto de la escalera, iluminado por las antorchas, estaba el Duque. De pie. Erguido. Con una espada antigua en la mano que había tomado de la panoplia del pasillo. Sus ojos verdes brillaban con una claridad asesina. Ya no había gafas, ni bastones, ni mantas. Solo había un hombre que había vuelto de la muerte para reclamar lo suyo.
+—Suéltala —dijo Alaric, comenzando a bajar los escalones. Sus pasos eran lentos, pesados, inexorables. La madera crujía bajo sus pies.
+—¡Es un fantasma! —gritó uno de los guardias, retrocediendo aterrorizado.
+—No soy un fantasma —dijo Alaric, levantando la espada—. Soy el Duque de Dunvegan. Y vengo a limpiar mi casa de ratas.
+Héctor soltó a Elena, retrocediendo, pálido como un espectro. —Caminas... ves... nos has engañado...
+—Corred —dijo Alaric, llegando al último escalón—. Corred o morid.
+El enfrentamiento final había comenzado. Y Alaric sabía que esa noche, la nieve de Dunvegan se teñiría de rojo, pero Elena no volvería a llorar de miedo.
+Si la imagen del Duque descendiendo las escaleras con espada en mano te ha puesto la piel de gallina, prepárate para el gran final. El Acto 5 será una batalla sin cuartel. Alaric tendrá que luchar contra sus propios límites físicos y contra los hombres de su tío para salvar a Elena. Y cuando el polvo se asiente, tendrán que enfrentar la verdad de su amor a la luz del día. ¿Podrá Elena perdonar todas las mentiras ahora que ve al hombre completo? Deja en los comentarios la palabra "Justicia" si quieres ver a Héctor pagar por todo.
+El descenso de Alaric McAllister por la gran escalera de Dunvegan no fue un paseo triunfal; fue una declaración de guerra escrita con el lenguaje del dolor y la furia. Cada escalón que bajaba enviaba relámpagos de agonía a través de sus piernas, allí donde las agujas del doctor Morvath habían quemado su piel días atrás. Sus músculos, despiertos pero aún frágiles, temblaban bajo su peso, amenazando con ceder en cualquier momento. Pero el Duque no se detuvo. Se aferraba a la barandilla de piedra con una mano, mientras con la otra sostenía la espada antigua, una extensión de su voluntad de hierro. Sus ojos, verdes y letales, no se apartaban de Lord Héctor, quien retrocedía paso a paso hacia el centro del vestíbulo, con el rostro desencajado por el terror de ver a un muerto caminar.
+Los dos guardias que acompañaban a Héctor intercambiaron miradas nerviosas. Eran mercenarios pagados, hombres sin lealtad, y la visión del "Duque Fantasma" bajando hacia ellos con una mirada asesina era suficiente para romper su valor. Sin embargo, el miedo a Héctor y la promesa de oro los mantuvo en su sitio, desenvainando sus propias espadas con manos sudorosas.
+—¡Matadlo! —chilló Héctor, su voz aguda rompiendo el silencio sepulcral—. ¡Es un truco! ¡Está débil! ¡Mirad cómo tiembla! ¡Si no lo matáis ahora, nos colgará a todos!
+Los guardias, espoleados por la desesperación, se lanzaron hacia la escalera. Alaric se detuvo en el tercer escalón desde el suelo, usando la altura a su favor. No tenía la movilidad para una danza de esgrima prolongada; tenía que ser brutal y rápido. Cuando el primer guardia lanzó una estocada, Alaric no la esquivó. Bloqueó el golpe con una fuerza que hizo vibrar el acero, y aprovechando el impulso del atacante, le propinó una patada en el pecho con su pierna derecha. El guardia rodó escaleras abajo, aturdido.
+El segundo guardia atacó por el flanco. Alaric giró, pero su rodilla izquierda falseó. Tropezó, cayendo sobre una rodilla. Héctor soltó una carcajada triunfal.
+—¡Acabadlo! —gritó el tío—. ¡Es un tullido jugando a ser soldado!
+El guardia alzó su espada para el golpe de gracia. Elena, que había estado paralizada por el shock, reaccionó. Recordó la daga en su bolsillo. No era una guerrera, pero el amor y el miedo le dieron una ferocidad que desconocía. Sacó la pequeña hoja y se lanzó contra el guardia por la espalda, clavándola en su hombro desprotegido.
+El hombre rugió de dolor y se giró, golpeando a Elena con el reverso de su mano. Ella cayó al suelo, deslizándose por las losas frías, pero su intervención había comprado el segundo que Alaric necesitaba.
+El Duque se impulsó desde el suelo con un rugido animal. La visión de Elena siendo golpeada borró cualquier rastro de debilidad en su cuerpo. La adrenalina pura inundó sus venas. Se abalanzó sobre el guardia distraído y, con un movimiento preciso, lo desarmó y lo noqueó con el pomo de su espada.
+Solo quedaba Héctor.
+El tío del Duque, viendo caer a sus hombres, intentó huir hacia la puerta principal. Pero Alaric, respirando con dificultad, con el sudor empapando su camisa y la sangre manando de una vieja herida que se había abierto en el esfuerzo, le cortó el paso.
+—No vas a ir a ninguna parte, tío —dijo Alaric. Su voz era baja, terrible.
+Héctor retrocedió hasta chocar con la pared de piedra. Sacó un cuchillo de caza de su cinturón, blandiéndolo con desesperación.
+—Aléjate —jadeó Héctor—. Tengo derechos. Soy tu regente.
+—Eras un parásito —corrigió Alaric, avanzando cojeando, arrastrando su pierna herida pero sin detenerse—. Me envenenaste con tu negligencia. Me robaste. Me humillaste. Pero todo eso... todo eso podría haberlo perdonado.
+Alaric levantó la espada, apuntando al pecho de Héctor.
+—Pero tocaste a Elena —dijo, y el nombre sonó como una sentencia sagrada—. La amenazaste. La golpeaste. Y por eso, Héctor, hoy pierdes todo.
+Héctor se lanzó en un último ataque suicida. Alaric desvió el cuchillo con un movimiento de muñeca casi despectivo y, soltando su espada, agarró a su tío por el cuello de la camisa y lo estampó contra la pared. Lo levantó unos centímetros del suelo, sosteniéndolo con una fuerza que provenía de meses de rabia acumulada.
+—Mírame —ordenó Alaric—. Mírame a los ojos y dime que ves a un ciego.
+Héctor miró los ojos verdes de su sobrino, brillantes de inteligencia y furia, y supo que estaba condenado.
+—Piedad... —gimió.
+Alaric lo soltó, dejándolo caer al suelo como un saco de basura. —La piedad te la dará el juez. O el verdugo. Yo solo te daré la oportunidad de vivir lo suficiente para ver cómo recupero todo lo que intentaste robarme.
+Se giró hacia la puerta, donde la señora Innes y el resto del personal, que habían estado escondidos escuchando el alboroto, asomaban ahora con rostros pálidos.
+—¡Atadlo! —ordenó el Duque—. Y enviad un mensajero al magistrado. Decidle que el Duque de Dunvegan ha vuelto de la tumba para denunciar un intento de asesinato.
+Cuando los sirvientes, recuperados de su asombro, corrieron a obedecer y a llevarse a Héctor y a sus hombres, la fuerza sobrenatural que había sostenido a Alaric se evaporó. El dolor regresó como una marea negra. Sus piernas cedieron y cayó de rodillas en el centro del vestíbulo.
+—¡Alaric!
+Elena estaba a su lado en un instante. Ignorando el dolor de su propio golpe, se arrodilló frente a él, acunando su rostro entre sus manos.
+—Estás herido —lloró ella, viendo la sangre en su camisa—. Estás...
+—Estoy vivo —jadeó él, mirándola como si fuera la única fuente de luz en el universo—. Y tú estás a salvo.
+Alaric dejó caer la cabeza en el hombro de ella, agotado. Elena lo abrazó con fuerza, sintiendo el calor de su cuerpo, el sudor, el temblor de sus músculos fatigados. Ya no había necesidad de ocultarse, ni de fingir frialdad. Estaban en el suelo, rodeados de caos, pero juntos.
+—Me has salvado —susurró ella contra su oído—. Te levantaste por mí.
+—Caminaría a través del fuego por ti —respondió él, con la voz rota—. Y lo sabes.
+Los días siguientes fueron una mezcla de actividad frenética y curación lenta. La noticia de la recuperación del Duque se extendió por las Tierras Altas como la pólvora. El magistrado llegó, Héctor fue encarcelado a la espera de juicio, y los médicos —los verdaderos médicos, no los carniceros como Morvath— fueron convocados para evaluar el estado real de Alaric.
+El diagnóstico fue esperanzador pero duro. La parálisis había sido causada por una compresión severa que se había aliviado con el tiempo, pero los músculos estaban dañados. Necesitaría meses de terapia, de dolor y esfuerzo para volver a caminar con normalidad.
+Pero Alaric ya no tenía miedo al dolor. Tenía a Elena.
+Ella no se fue. A pesar de que su contrato había terminado técnicamente, nadie en el castillo se atrevió a sugerir que se marchara. Ella seguía durmiendo en la habitación del Duque, aunque ahora la dinámica era diferente. Ya no era una necesidad médica para evitar la hipotermia; era una necesidad del alma.
+Una noche, un mes después del incidente, la tormenta de invierno finalmente amainó, dando paso a los primeros indicios de la primavera. La habitación estaba en calma, iluminada por el fuego. Alaric estaba sentado en el borde de la cama, practicando ejercicios de movilidad con sus pies. Elena estaba a su lado, tomando notas en un cuaderno sobre su progreso.
+Alaric detuvo sus ejercicios y la miró. Ya no llevaba la barba descuidada, y sus ojos verdes la seguían con una devoción abierta que todavía la hacía sonrojar.
+—Elena —dijo él.
+Ella levantó la vista. —¿Sí, Alaric?
+—Deja ese cuaderno.
+Ella obedeció, dejándolo sobre la mesa de noche. Alaric extendió la mano y ella la tomó, entrelazando sus dedos con los de él. La piel de él estaba cálida, fuerte.
+—Durante mucho tiempo —empezó él, con voz suave—, pensé que mi vida había terminado. Que estaba condenado a ser una carga, un hombre a medias. Me acostumbré a la oscuridad y al frío. Y entonces llegaste tú.
+Tiró de ella suavemente hasta que Elena quedó de pie entre sus piernas abiertas, sus rostros a la misma altura.
+—Llegaste con tu maleta pequeña y tus manos frías, y te metiste en mi cama y en mi vida sin pedir permiso. Me devolviste la sensibilidad, Elena. No solo en las piernas. Me hiciste sentir vergüenza, deseo, ira, esperanza. Me hiciste sentir vivo cuando yo solo quería morir.
+Elena acarició su cabello, sus ojos llenos de lágrimas. —Tú también me salvaste, Alaric. Estaba sola. Estaba perdida.
+—Nunca volverás a estar perdida —prometió él—. He estado pensando... sobre tu posición aquí.
+Elena sintió una punzada de miedo. —¿Mi posición?
+—Sí. La gente empieza a hablar. Dicen que no es propio que una enfermera duerma con el Duque, ahora que el Duque está... funcional.
+Elena bajó la mirada. —Lo sé. Debería... debería mudarme a otra habitación.
+—No —dijo Alaric, soltando una mano para levantarle la barbilla—. Esa no es la solución que tengo en mente.
+El Duque se inclinó hacia adelante, apoyando la frente contra el estómago de ella.
+—No quiero que te mudes. Quiero que te quedes. Pero no quiero que seas mi enfermera. Ya no necesito una enfermera. Necesito una compañera. Necesito a la mujer que me dio calor cuando yo era hielo. Necesito a la mujer que apuñaló a un guardia para salvarme.
+Levantó la vista, y sus ojos brillaban con una intensidad que le robó el aliento a Elena.
+—Cásate conmigo, Elena Ross. Sé mi Duquesa. Sé la dueña de Dunvegan y de todo lo que soy.
+Elena se quedó sin palabras. Miró a su alrededor, a la habitación que había sido su prisión y su refugio, y luego miró al hombre que la había habitado.
+—Pero... no soy noble —balbuceó—. Soy pobre. Soy hija de un médico rural.
+—Eres la mujer más noble que he conocido —replicó Alaric con firmeza—. Tienes más honor en tu dedo meñique que toda la corte de Londres junta. Y en cuanto a la riqueza... todo lo que tengo es tuyo. Porque sin ti, yo no estaría aquí para disfrutarlo.
+Alaric apretó sus manos. —Dime que sí. Dime que te quedarás conmigo, no para calentarme, sino para amarme.
+Elena sonrió, y las lágrimas finalmente se derramaron. Se inclinó y lo besó, un beso que sabía a victoria y a futuro.
+—Sí —susurró contra sus labios—. Sí, Alaric. Me quedaré. Y te amaré hasta que el último invierno congele el mundo.
+Alaric rió, un sonido profundo y alegre, y tiró de ella hasta que cayó sobre la cama, atrapándola entre sus brazos y sus piernas, tal como aquella primera mañana, pero esta vez sin mentiras, sin parálisis, solo con el peso delicioso de dos cuerpos que se pertenecen.
+Epílogo: Un año después
+El castillo de Dunvegan había cambiado. Las cortinas pesadas habían sido retiradas, y la luz del sol inundaba los pasillos. Se oían risas y música.
+En los jardines, Alaric caminaba. Usaba un bastón de madera tallada, y su paso era lento, con una cojera visible, pero caminaba erguido, con la cabeza alta. A su lado, del brazo, iba Elena, la Duquesa de Dunvegan, vestida con los colores del clan McAllister.
+Se detuvieron en un mirador que daba al valle. El viento soplaba fuerte, pero ya no parecía hostil.
+—¿Tienes frío? —preguntó Alaric, envolviéndola con su brazo.
+—No —dijo ella, apoyándose en él—. Nunca tengo frío contigo.
+Alaric besó su sien. Miró hacia el horizonte, donde el sol se ponía pintando el cielo de oro y fuego. Recordó la oscuridad, el miedo, el veneno de su tío. Y luego miró a su esposa, y supo que cada segundo de sufrimiento había valido la pena, porque lo había llevado a ese preciso instante.
+—Vamos a casa —dijo él—. Innes ha preparado la cena. Y creo que esta noche hará frío.
+Elena lo miró con una sonrisa traviesa. —¿Debería preocuparme por la temperatura de mi señor?
+—Absolutamente —respondió él, con un brillo depredador y amoroso en sus ojos verdes—. Creo que necesitaré una terapia intensiva de calor humano. Y exijo que sea administrada por la Duquesa en persona.
+Se rieron juntos y caminaron de regreso al castillo, dos almas que habían vencido al invierno y que ahora vivían en un verano eterno, construido con el calor de sus propios corazones.
+Conclusión:
+El amor verdadero no es solo mariposas y días soleados; a veces es compartir el frío, soportar el dolor y tener el coraje de despertar cuando todo lo demás te dice que te rindas. La historia de Alaric y Elena nos enseña que las cicatrices, visibles o invisibles, no nos definen, sino que nos preparan para ser amados por quien sepa ver la belleza en nuestra supervivencia. Nos recuerda que, incluso en la noche más oscura, el calor de una mano amiga puede ser la chispa que encienda de nuevo la vida.
+Si esta historia de superación, lealtad y pasión te ha llegado al corazón, si sentiste el frío de la primera noche y el fuego del rescate final, te invito a dejarme en los comentarios la palabra "Fuego". Así sabré que eres de los que creen que el amor puede derretir cualquier barrera. Y no olvides suscribirte al canal y activar la campanita, porque hay muchas más historias épicas esperando ser contadas. Gracias por acompañarme en este viaje a las Tierras Altas. Nos vemos en la próxima historia.
+
