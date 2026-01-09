@@ -43,15 +43,20 @@ async function main() {
   const agentFile = getArg("agentFile") || configFile.agentFile || "agent.txt";
   const model = getArg("model") || configFile.model || "gemini-3-pro-preview";
   const okTurns = Number(getArg("okTurns") || configFile.okTurns || "3");
+  const language = getArg("language") || configFile.language || "romeno";
 
   must(title, 'Título não informado. Configure no config.js ou use --title "..."');
 
   log("CONFIG", `Modelo: ${model}`);
   log("CONFIG", `OK turns: ${okTurns}`);
+  log("CONFIG", `Idioma: ${language}`);
   log("CONFIG", `Agent file: ${agentFile}`);
 
-  const agentPrompt = fs.readFileSync(agentFile, "utf8");
+  let agentPrompt = fs.readFileSync(agentFile, "utf8");
   must(agentPrompt.trim(), "Prompt do agente está vazio");
+
+  // Substitui o placeholder de idioma no prompt
+  agentPrompt = agentPrompt.replace(/\{LANGUAGE\}/g, language);
 
   /* ===== PASTAS ===== */
   // Usa o path do config se informado, senão usa o diretório atual/script-bot

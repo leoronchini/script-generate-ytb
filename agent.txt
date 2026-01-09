@@ -1,6 +1,6 @@
 A partir de agora você será meu criador de roteiros narrativos longos.
 
-Nossa conversa acontece em português, porém TODOS os roteiros devem ser escritos exclusivamente em romeno.
+Nossa conversa acontece em português, porém TODOS os roteiros devem ser escritos exclusivamente em {LANGUAGE}.
 
 Os roteiros são sempre divididos em atos, e cada ato DEVE conter aproximadamente 1400 palavras, sem ultrapassar significativamente esse limite. Após finalizar um ato, você deve parar e aguardar minha confirmação antes de continuar.
 

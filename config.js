@@ -20,4 +20,8 @@ export const config = {
 
   // Número de turnos "OK" após a primeira mensagem
   okTurns: 3,
+
+  // Idioma do roteiro gerado
+  // Exemplos: "romeno", "português", "espanhol", "inglês", "francês", etc.
+  language: "romeno",
 };
