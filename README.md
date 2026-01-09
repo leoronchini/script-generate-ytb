@@ -31,11 +31,8 @@ Antes de começar, você precisa ter:
    ```
 
 3. **Configure sua chave de API**:
-   - Crie um arquivo chamado `.env` na raiz do projeto
-   - Adicione sua chave do Gemini:
-     ```
-     GEMINI_API_KEY=sua_chave_aqui
-     ```
+   - Abra o arquivo `config.js`
+   - Adicione sua chave do Gemini no campo `geminiKey`
 
 ### Configuração
 
@@ -61,6 +58,10 @@ export const config = {
   // Idioma do roteiro gerado
   // Exemplos: "romeno", "português", "espanhol", "inglês", "francês", etc.
   language: "romeno",
+
+  // Chave da API do Google Gemini
+  // Obtenha sua chave em: https://makersuite.google.com/app/apikey
+  geminiKey: "sua_chave_aqui",
 };
 ```
 
@@ -70,6 +71,7 @@ export const config = {
 - **`outputPath`**: Caminho completo onde os arquivos serão salvos (ex: `"C:/Users/SeuNome/Videos/roteiros"`)
 - **`okTurns`**: Quantas vezes o sistema pedirá "continuação" ao gerar o roteiro (padrão: 3)
 - **`language`**: Idioma em que o roteiro será gerado (padrão: "romeno"). Pode ser qualquer idioma suportado pelo modelo
+- **`geminiKey`**: Chave da API do Google Gemini (obrigatório). Obtenha em [Google AI Studio](https://makersuite.google.com/app/apikey)
 
 ### Executando o gerador
 
@@ -97,6 +99,7 @@ Você pode passar os seguintes parâmetros na linha de comando:
 - `--model "nome"` - Modelo do Gemini a usar
 - `--agentFile "arquivo.txt"` - Arquivo de prompt personalizado
 - `--language "idioma"` - Idioma do roteiro gerado (padrão: "romeno")
+- `--geminiKey "chave"` - Chave da API do Gemini (sobrescreve a do config.js)
 
 ## 📁 Estrutura de arquivos gerados
 
@@ -142,8 +145,9 @@ Arquivo de legendas no formato padrão SRT, com:
 ## 🔧 Solução de problemas
 
 ### Erro: "GEMINI_API_KEY não definida"
-- Verifique se o arquivo `.env` existe na raiz do projeto
-- Confirme que a chave está escrita corretamente: `GEMINI_API_KEY=sua_chave`
+- Verifique se a chave está configurada no arquivo `config.js` no campo `geminiKey`
+- Confirme que a chave está escrita corretamente e não está vazia
+- Você também pode passar a chave via parâmetro: `--geminiKey "sua_chave"`
 
 ### Erro: "Título não informado"
 - Configure o título no `config.js` ou use `--title` na linha de comando

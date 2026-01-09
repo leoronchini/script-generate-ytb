@@ -35,8 +35,9 @@ function must(value, msg) {
 async function main() {
   log("INIT", "Iniciando geração de roteiro");
 
-  const apiKey = process.env.GEMINI_API_KEY;
-  must(apiKey, "GEMINI_API_KEY não definida no .env");
+  // Lê a chave do config.js ou do .env (para compatibilidade)
+  const apiKey = getArg("geminiKey") || configFile.geminiKey || process.env.GEMINI_API_KEY;
+  must(apiKey, "GEMINI_API_KEY não definida. Configure no config.js ou use --geminiKey");
 
   // Lê configurações do arquivo config.js, mas permite sobrescrever por parâmetros
   const title = getArg("title") || configFile.title;

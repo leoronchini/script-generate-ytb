@@ -24,4 +24,8 @@ export const config = {
   // Idioma do roteiro gerado
   // Exemplos: "romeno", "português", "espanhol", "inglês", "francês", etc.
   language: "romeno",
+
+  // Chave da API do Google Gemini
+  // Obtenha sua chave em: https://makersuite.google.com/app/apikey
+  geminiKey: "sua_chave_aqui",
 };
