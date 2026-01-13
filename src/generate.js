@@ -1,10 +1,10 @@
-import "dotenv/config";
 import fs from "node:fs";
 import path from "node:path";
 import { GoogleGenAI } from "@google/genai";
 import { converterParaSRT } from "./srt/textToSrt.js";
 import { cleanNarrative } from "./formatter/cleanNarrative.js";
 import { cleanScript } from "./formatter/cleanNarrative.js";
+import { retryWithBackoff } from "./utils/retry.js";
 import { config as configFile } from "../config.js";
 
 /* =========================
@@ -28,6 +28,7 @@ function must(value, msg) {
   }
   return value;
 }
+
 
 
 
@@ -95,7 +96,11 @@ async function main() {
 
   /* ===== PRIMEIRA MENSAGEM ===== */
   log("CHAT", "Enviando título");
-  const r1 = await chat.sendMessage({ message: title });
+  const r1 = await retryWithBackoff(
+    () => chat.sendMessage({ message: title }),
+    log,
+    "Enviando título"
+  );
 
   const firstClean = cleanScript(r1.text ?? "");
   parts.push(firstClean);
@@ -105,7 +110,11 @@ async function main() {
   /* ===== OK LOOPS ===== */
   for (let i = 0; i < okTurns; i++) {
     log("CHAT", `Enviando OK (${i + 1}/${okTurns})`);
-    const r = await chat.sendMessage({ message: "OK" });
+    const r = await retryWithBackoff(
+      () => chat.sendMessage({ message: "OK" }),
+      log,
+      `Enviando OK (${i + 1}/${okTurns})`
+    );
 
     const cleaned = cleanScript(r.text ?? "");
     parts.push(cleaned);
@@ -162,6 +171,24 @@ async function main() {
 }
 
 main().catch((err) => {
-  log("FATAL", err?.stack || err?.message || err);
+  // Tratamento melhorado de erros
+  if (err?.error) {
+    const errorCode = err.error.code;
+    const errorMessage = err.error.message || "Erro desconhecido";
+    
+    if (errorCode === 503) {
+      log("FATAL", `Serviço sobrecarregado (503). O modelo Gemini está temporariamente indisponível.`);
+      log("FATAL", `Tente novamente em alguns minutos.`);
+    } else if (errorCode === 429) {
+      log("FATAL", `Limite de taxa excedido (429). Muitas requisições em pouco tempo.`);
+      log("FATAL", `Aguarde alguns minutos antes de tentar novamente.`);
+    } else if (errorCode === 401 || errorCode === 403) {
+      log("FATAL", `Erro de autenticação (${errorCode}). Verifique sua chave API no config.js`);
+    } else {
+      log("FATAL", `Erro da API (${errorCode}): ${errorMessage}`);
+    }
+  } else {
+    log("FATAL", err?.stack || err?.message || err);
+  }
   process.exit(1);
 });
