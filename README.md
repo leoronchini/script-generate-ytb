@@ -50,17 +50,11 @@ export const config = {
 O projeto usa o conceito de **canais** — cada canal tem seu próprio agente (prompt), idioma e pasta de saída.
 
 ```js
-// Canal ativo (altere para o canal desejado)
-export const selectedChannel = "ytb-west";
+// Canal ativo (altere para o nome do canal desejado)
+export const selectedChannel = "nome-do-canal";
 ```
 
-Os canais disponíveis estão no array `channels`:
-
-| Nome | Idioma | Pasta de saída |
-|------|--------|----------------|
-| `ytb-west` | Romeno | `C:/Users/leoro/Videos/ytb-west` |
-| `guadalupe` | Espanhol | `C:/Users/leoro/Videos/guadalupe` |
-| `mexico` | Espanhol | `C:/Users/leoro/Videos/mexico-videos` |
+Os canais disponíveis estão no array `channels` dentro de `config.js`. Cada canal define seu próprio agente, idioma e pasta de saída.
 
 Para adicionar um novo canal, inclua uma entrada no array `channels` em `config.js`:
 
@@ -126,13 +120,13 @@ npm start -- --title "Título do vídeo"
 ### Sobrescrevendo o canal
 
 ```bash
-npm start -- --channel guadalupe
+npm start -- --channel nome-do-canal
 ```
 
 ### Combinando parâmetros
 
 ```bash
-npm start -- --title "Meu título" --channel mexico --okTurns 5 --model "gemini-3-pro-preview"
+npm start -- --title "Meu título" --channel nome-do-canal --okTurns 5 --model "gemini-3-pro-preview"
 ```
 
 ### Todos os parâmetros disponíveis
@@ -165,10 +159,10 @@ outputPath/
 
 **Exemplo:**
 ```
-C:/Users/leoro/Videos/ytb-west/
-└── au izgonit mama cu cop.../
-    ├── info-au izgonit mama cu cop.txt
-    └── roteiro au izgonit mama cu cop.srt
+C:/Videos/meu-canal/
+└── meu titulo de exemplo.../
+    ├── info-meu titulo de exemplo.txt
+    └── roteiro meu titulo de exemplo.srt
 ```
 
 ### Arquivo `info-*.txt`
@@ -223,7 +217,7 @@ título
 
 **`Canal "X" não encontrado`**
 - Verifique o valor de `selectedChannel` ou do parâmetro `--channel`
-- Canais disponíveis: `ytb-west`, `guadalupe`, `mexico`
+- Os nomes válidos são os definidos no array `channels` em `config.js`
 
 **`Título não informado`**
 - Defina `title` em `config.js` ou use `--title "..."` na linha de comando
