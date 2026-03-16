@@ -89,10 +89,20 @@ export async function retryWithBackoff(fn, logFn = null, context = "") {
       lastError = error;
       
       // Verifica se é um erro retentável (incluindo timeout)
-      const errorCode = error?.error?.code;
-      const errorMessage = error?.message || "";
+      // Tenta múltiplas estruturas de erro possíveis
+      const errorCode = error?.error?.code || error?.code || error?.status;
+      const errorMessage = error?.message || error?.error?.message || "";
+      const errorStatus = error?.error?.status || error?.statusText || "";
       const isTimeout = errorMessage.toLowerCase().includes("timeout");
-      const isRetryable = (errorCode && RETRYABLE_ERRORS.includes(errorCode)) || isTimeout;
+      
+      // Debug: log estrutura do erro na primeira tentativa
+      if (logFn && attempt === 0 && errorCode) {
+        logFn("DEBUG", `Código de erro detectado: ${errorCode} | Status: ${errorStatus || "N/A"}`);
+      }
+      
+      const isRetryable = (errorCode && RETRYABLE_ERRORS.includes(Number(errorCode))) || 
+                         isTimeout || 
+                         errorStatus === "UNAVAILABLE";
       
       if (!isRetryable || attempt === MAX_RETRIES) {
         // Erro não retentável ou esgotaram as tentativas
@@ -101,17 +111,18 @@ export async function retryWithBackoff(fn, logFn = null, context = "") {
             logFn("ERRO", `Timeout após ${attempt + 1} tentativa(s)`);
           } else {
             const errorMsg = error?.error?.message || error?.message || "Erro desconhecido";
-            logFn("ERRO", `Falha após ${attempt + 1} tentativa(s): ${errorMsg}`);
+            logFn("ERRO", `Falha após ${attempt + 1} tentativa(s): ${errorMsg} (Código: ${errorCode || "N/A"})`);
           }
         }
         throw error;
       }
 
-      // Log da tentativa apenas se necessário
-      if (logFn && attempt === 0) {
+      // Log da tentativa com mais detalhes
+      if (logFn) {
         const errorMsg = error?.error?.message || error?.message || "Erro desconhecido";
-        const errorType = isTimeout ? "Timeout" : `Erro ${errorCode || "desconhecido"}`;
-        logFn("RETRY", `Tentativa ${attempt + 1}/${MAX_RETRIES + 1} falhou (${errorType}). Tentando novamente...`);
+        const errorType = isTimeout ? "Timeout" : `Erro ${errorCode}`;
+        const delaySeconds = Math.round(delay / 1000);
+        logFn("RETRY", `Tentativa ${attempt + 1}/${MAX_RETRIES + 1} falhou (${errorType}: ${errorMsg}). Aguardando ${delaySeconds}s antes de tentar novamente...`);
       }
       
       await sleep(delay);

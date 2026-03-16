@@ -44,6 +44,8 @@ async function processTitle(title, config) {
     thumbnailAgentPrompt,
     agentPrompt,
     ai,
+    generateThumbnailPrompt,
+    generateBlockImagePrompts,
   } = config;
 
   log("TITLE", `Processando título: "${title}"`);
@@ -142,42 +144,48 @@ async function processTitle(title, config) {
   log("SUMMARY", `Descrição gerada (${description.length} caracteres)`);
 
   /* ===== ETAPA 2: GERAR PROMPT PARA THUMBNAIL ===== */
-  log("THUMBNAIL", "Gerando prompt da thumbnail...");
+  let thumbnailPrompt = "";
+  let thumbnailChat = null;
   
-  let thumbnailChat;
-  try {
-    thumbnailChat = ai.chats.create({
-      model,
-      config: {
-        systemInstruction: thumbnailAgentPrompt,
-        temperature: 0.8,
-      },
-    });
-  } catch (error) {
-    log("ERRO", `Falha ao criar sessão de chat: ${error?.message || error}`);
-    throw error;
+  if (generateThumbnailPrompt) {
+    log("THUMBNAIL", "Gerando prompt da thumbnail...");
+    
+    try {
+      thumbnailChat = ai.chats.create({
+        model,
+        config: {
+          systemInstruction: thumbnailAgentPrompt,
+          temperature: 0.8,
+        },
+      });
+    } catch (error) {
+      log("ERRO", `Falha ao criar sessão de chat: ${error?.message || error}`);
+      throw error;
+    }
+
+    // Delay para evitar rate limiting
+    await new Promise(resolve => setTimeout(resolve, 3000));
+
+    const thumbnailMessage = `Título: ${title}\n\nDescrição do roteiro:\n${description}`;
+    
+    let thumbnailResponse;
+    try {
+      thumbnailResponse = await retryWithBackoff(
+        () => thumbnailChat.sendMessage({ message: thumbnailMessage }),
+        log,
+        "Gerando prompt da thumbnail"
+      );
+    } catch (error) {
+      log("ERRO", `Falha ao gerar prompt da thumbnail: ${error?.message || error}`);
+      throw error;
+    }
+
+    thumbnailPrompt = thumbnailResponse.text?.trim() || "";
+    must(thumbnailPrompt, "Prompt da thumbnail não foi gerado");
+    log("THUMBNAIL", `Prompt gerado (${thumbnailPrompt.length} caracteres)`);
+  } else {
+    log("THUMBNAIL", "Geração de prompt da thumbnail desabilitada");
   }
-
-  // Pequeno delay para evitar rate limiting
-  await new Promise(resolve => setTimeout(resolve, 2000));
-
-  const thumbnailMessage = `Título: ${title}\n\nDescrição do roteiro:\n${description}`;
-  
-  let thumbnailResponse;
-  try {
-    thumbnailResponse = await retryWithBackoff(
-      () => thumbnailChat.sendMessage({ message: thumbnailMessage }),
-      log,
-      "Gerando prompt da thumbnail"
-    );
-  } catch (error) {
-    log("ERRO", `Falha ao gerar prompt da thumbnail: ${error?.message || error}`);
-    throw error;
-  }
-
-  const thumbnailPrompt = thumbnailResponse.text?.trim() || "";
-  must(thumbnailPrompt, "Prompt da thumbnail não foi gerado");
-  log("THUMBNAIL", `Prompt gerado (${thumbnailPrompt.length} caracteres)`);
 
   /* ===== ETAPA 3: GERAR ROTEIRO BASEADO NA DESCRIÇÃO ===== */
   log("ROTEIRO", "Gerando roteiro...");
@@ -204,27 +212,31 @@ async function processTitle(title, config) {
   parts.push(firstClean);
   log("ROTEIRO", `Parte 1 gerada (${firstClean.length} caracteres)`);
 
-  // Gerar prompt de imagem para o bloco 1
-  log("IMAGEM", "Gerando prompt de imagem do bloco 1...");
-  await new Promise(resolve => setTimeout(resolve, 2000)); // Delay para evitar rate limiting
-  
-  const block1Message = `Título: ${title}\n\nDescrição do roteiro:\n${description}\n\nTexto do bloco:\n${firstClean}`;
-  let block1Response;
-  try {
-    block1Response = await retryWithBackoff(
-      () => thumbnailChat.sendMessage({ message: block1Message }),
-      log,
-      "Gerando imagem do bloco 1"
-    );
-  } catch (error) {
-    log("ERRO", `Falha ao gerar prompt de imagem do bloco 1: ${error?.message || error}`);
-    throw error;
+  // Gerar prompt de imagem para o bloco 1 (se habilitado)
+  if (generateBlockImagePrompts && thumbnailChat) {
+    log("IMAGEM", "Gerando prompt de imagem do bloco 1...");
+    await new Promise(resolve => setTimeout(resolve, 3000)); // Delay para evitar rate limiting
+    
+    const block1Message = `Título: ${title}\n\nDescrição do roteiro:\n${description}\n\nTexto do bloco:\n${firstClean}`;
+    let block1Response;
+    try {
+      block1Response = await retryWithBackoff(
+        () => thumbnailChat.sendMessage({ message: block1Message }),
+        log,
+        "Gerando imagem do bloco 1"
+      );
+    } catch (error) {
+      log("ERRO", `Falha ao gerar prompt de imagem do bloco 1: ${error?.message || error}`);
+      throw error;
+    }
+    
+    const block1Prompt = block1Response.text?.trim() || "";
+    must(block1Prompt, "Prompt de imagem do bloco 1 não foi gerado");
+    blockImagePrompts.push(block1Prompt);
+    log("IMAGEM", `Prompt do bloco 1 gerado com sucesso (${block1Prompt.length} caracteres)`);
+  } else if (!generateBlockImagePrompts) {
+    log("IMAGEM", "Geração de prompts de imagem por bloco desabilitada");
   }
-  
-  const block1Prompt = block1Response.text?.trim() || "";
-  must(block1Prompt, "Prompt de imagem do bloco 1 não foi gerado");
-  blockImagePrompts.push(block1Prompt);
-  log("IMAGEM", `Prompt do bloco 1 gerado com sucesso (${block1Prompt.length} caracteres)`);
 
   /* ===== OK LOOPS ===== */
   for (let i = 0; i < okTurns; i++) {
@@ -238,28 +250,30 @@ async function processTitle(title, config) {
     parts.push(cleaned);
     log("SCRIPT", `Parte ${i + 2} gerada (${cleaned.length} caracteres)`);
 
-    // Gerar prompt de imagem para este bloco
-    const blockNumber = i + 2;
-    log("IMAGE", `Gerando prompt de imagem do bloco ${blockNumber}...`);
-    await new Promise(resolve => setTimeout(resolve, 2000)); // Delay para evitar rate limiting
-    
-    const blockMessage = `Título: ${title}\n\nDescrição do roteiro:\n${description}\n\nTexto do bloco:\n${cleaned}`;
-    let blockResponse;
-    try {
-      blockResponse = await retryWithBackoff(
-        () => thumbnailChat.sendMessage({ message: blockMessage }),
-        log,
-        `Gerando imagem do bloco ${blockNumber}`
-      );
-    } catch (error) {
-      log("ERROR", `Falha ao gerar prompt de imagem do bloco ${blockNumber}: ${error?.message || error}`);
-      throw error;
+    // Gerar prompt de imagem para este bloco (se habilitado)
+    if (generateBlockImagePrompts && thumbnailChat) {
+      const blockNumber = i + 2;
+      log("IMAGE", `Gerando prompt de imagem do bloco ${blockNumber}...`);
+      await new Promise(resolve => setTimeout(resolve, 3000)); // Delay para evitar rate limiting
+      
+      const blockMessage = `Título: ${title}\n\nDescrição do roteiro:\n${description}\n\nTexto do bloco:\n${cleaned}`;
+      let blockResponse;
+      try {
+        blockResponse = await retryWithBackoff(
+          () => thumbnailChat.sendMessage({ message: blockMessage }),
+          log,
+          `Gerando imagem do bloco ${blockNumber}`
+        );
+      } catch (error) {
+        log("ERROR", `Falha ao gerar prompt de imagem do bloco ${blockNumber}: ${error?.message || error}`);
+        throw error;
+      }
+      
+      const blockPrompt = blockResponse.text?.trim() || "";
+      must(blockPrompt, `Prompt de imagem do bloco ${blockNumber} não foi gerado`);
+      blockImagePrompts.push(blockPrompt);
+      log("IMAGE", `Prompt do bloco ${blockNumber} gerado com sucesso (${blockPrompt.length} caracteres)`);
     }
-    
-    const blockPrompt = blockResponse.text?.trim() || "";
-    must(blockPrompt, `Prompt de imagem do bloco ${blockNumber} não foi gerado`);
-    blockImagePrompts.push(blockPrompt);
-    log("IMAGE", `Prompt do bloco ${blockNumber} gerado com sucesso (${blockPrompt.length} caracteres)`);
   }
 
   /* ===== MERGE FINAL ===== */
@@ -283,26 +297,45 @@ async function processTitle(title, config) {
   const infoFileName = `info-${safeShortTitle}.txt`;
   const infoPath = path.join(jobDir, infoFileName);
   
-  // Monta a seção de prompts (thumbnail + um para cada bloco)
-  let promptsSection = `PROMPT THUMBNAIL:\n${thumbnailPrompt}\n`;
+  // Monta a seção de prompts (thumbnail + blocos, se gerados)
+  let promptsSection = "";
   
-  for (let i = 0; i < blockImagePrompts.length; i++) {
-    promptsSection += `\n-------------\nPROMPT BLOCO ${i + 1}:\n${blockImagePrompts[i]}\n`;
+  if (generateThumbnailPrompt && thumbnailPrompt) {
+    promptsSection = `PROMPT THUMBNAIL:\n${thumbnailPrompt}\n`;
   }
   
-  const infoContent = `TITULO: 
+  if (generateBlockImagePrompts && blockImagePrompts.length > 0) {
+    for (let i = 0; i < blockImagePrompts.length; i++) {
+      promptsSection += `${promptsSection ? '\n' : ''}-------------\nPROMPT BLOCO ${i + 1}:\n${blockImagePrompts[i]}\n`;
+    }
+  }
+  
+  // Monta o conteúdo do arquivo INFO
+  let infoContent = `TITULO: 
 ${title}
--------------
-${promptsSection}
---------------
+`;
+  
+  if (promptsSection) {
+    infoContent += `-------------
+${promptsSection}`;
+  }
+  
+  infoContent += `--------------
 DESCRIÇÃO
 ${description}
 --------------
 ROTEIRO 
 ${finalCleanScript}
 `;
+  
   fs.writeFileSync(infoPath, infoContent, "utf8");
-  log("INFO", `Arquivo INFO gerado com sucesso! (${1 + blockImagePrompts.length} prompts de imagem)`);
+  
+  const promptsCount = (generateThumbnailPrompt ? 1 : 0) + (generateBlockImagePrompts ? blockImagePrompts.length : 0);
+  if (promptsCount > 0) {
+    log("INFO", `Arquivo INFO gerado com sucesso! (${promptsCount} prompts de imagem)`);
+  } else {
+    log("INFO", `Arquivo INFO gerado com sucesso! (sem prompts de imagem)`);
+  }
 
   /* ===== SRT ===== */
   log("SRT", "Gerando arquivo SRT a partir do texto final...");
@@ -357,6 +390,10 @@ async function main() {
   const okTurns = Number(getArg("okTurns") || configFile.okTurns || "3");
   const language = getArg("language") || channel.language || "romeno";
   
+  // Configurações de geração de imagem do canal
+  const generateThumbnailPrompt = channel.generateThumbnailPrompt ?? true;
+  const generateBlockImagePrompts = channel.generateBlockImagePrompts ?? false;
+  
   // Output path do canal (pode ser sobrescrito por parâmetro --outputPath)
   const outputPath = getArg("outputPath") || channel.outputPath;
 
@@ -369,6 +406,7 @@ async function main() {
   );
 
   log("CONFIG", `Modelo: ${model} | Idioma: ${language} | OK turns: ${okTurns}`);
+  log("CONFIG", `Thumbnail: ${generateThumbnailPrompt ? 'SIM' : 'NÃO'} | Blocos: ${generateBlockImagePrompts ? 'SIM' : 'NÃO'}`);
   log("CONFIG", `Total de títulos para processar: ${titles.length}`);
 
   // Lê o agente de resumo
@@ -403,6 +441,8 @@ async function main() {
     thumbnailAgentPrompt,
     agentPrompt,
     ai,
+    generateThumbnailPrompt,
+    generateBlockImagePrompts,
   };
 
   // Processa cada título
