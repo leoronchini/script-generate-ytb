@@ -1,185 +1,247 @@
 # Script Generate - Gerador de Roteiros para YouTube
 
-Um gerador automático de roteiros narrativos longos usando inteligência artificial. Este projeto cria roteiros completos em romeno a partir de um título, gerando arquivos de texto e legendas (SRT) prontos para uso em vídeos do YouTube.
+Gerador automático de roteiros narrativos longos usando Google Gemini AI. A partir de um título, o sistema gera um resumo, um prompt para thumbnail e um roteiro completo — salvando tudo em arquivos `.txt` e `.srt` prontos para uso.
 
-## 📋 O que este projeto faz?
+## O que este projeto faz
 
-Este projeto automatiza a criação de roteiros narrativos longos para vídeos. Você fornece apenas um **título** e o sistema:
+1. Gera um **resumo/descrição** do roteiro a partir do título
+2. Gera um **prompt para thumbnail** baseado no título e no resumo
+3. Gera o **roteiro narrativo completo** no idioma configurado por canal
+4. Limpa metatexto e formatações indesejadas da IA
+5. Exporta um arquivo **info** (título + thumbnail prompt + descrição + roteiro) e um arquivo **.srt** (legendas)
+6. Suporta **processamento em lote** de múltiplos títulos
 
-1. ✅ Gera um roteiro narrativo completo no idioma desejado
-2. ✅ Limpa automaticamente metatexto e formatações indesejadas
-3. ✅ Cria arquivo de roteiro em texto (.txt)
-4. ✅ Gera arquivo de legendas (.srt) para vídeos
-5. ✅ Organiza tudo em pastas nomeadas automaticamente
+---
 
-## 🚀 Como usar
+## Pré-requisitos
 
-### Pré-requisitos
+- **Node.js** 18 ou superior
+- Uma **chave de API do Google Gemini** — obtenha em [Google AI Studio](https://aistudio.google.com/app/apikey)
 
-Antes de começar, você precisa ter:
+---
 
-- **Node.js** instalado (versão 16 ou superior)
-- Uma **chave de API do Google Gemini** (obtenha em [Google AI Studio](https://makersuite.google.com/app/apikey))
+## Instalação
 
-### Instalação
+```bash
+# 1. Acesse a pasta do projeto
+cd script-generate-ytb
 
-1. **Clone ou baixe este projeto** para seu computador
+# 2. Instale as dependências
+npm install
+```
 
-2. **Abra o terminal** na pasta do projeto e instale as dependências:
-   ```bash
-   npm install
-   ```
+---
 
-3. **Configure sua chave de API**:
-   - Abra o arquivo `config.js`
-   - Adicione sua chave do Gemini no campo `geminiKey`
+## Configuração
 
-### Configuração
+Toda a configuração é feita no arquivo `config.js`.
 
-Abra o arquivo `config.js` e ajuste as configurações:
+### 1. Adicione sua chave de API
 
-```javascript
+```js
 export const config = {
-  // Título do vídeo (pode ser sobrescrito por parâmetro)
-  title: "Seu título aqui",
-  
-  // Pasta onde os arquivos serão salvos
-  outputPath: "C:/caminho/para/suas/pastas",
-  
-  // Modelo do Gemini (padrão: gemini-3-pro-preview)
-  model: "gemini-3-pro-preview",
-  
-  // Arquivo do agente (prompt)
-  agentFile: "agent.txt",
-  
-  // Número de turnos "OK" após a primeira mensagem
-  okTurns: 3,
-
-  // Idioma do roteiro gerado
-  // Exemplos: "romeno", "português", "espanhol", "inglês", "francês", etc.
-  language: "romeno",
-
-  // Chave da API do Google Gemini
-  // Obtenha sua chave em: https://makersuite.google.com/app/apikey
-  geminiKey: "sua_chave_aqui",
+  geminiKey: "SUA_CHAVE_AQUI",
+  // ...
 };
 ```
 
-**Configurações importantes:**
+### 2. Selecione o canal
 
-- **`title`**: O título do vídeo que será usado para gerar o roteiro
-- **`outputPath`**: Caminho completo onde os arquivos serão salvos (ex: `"C:/Users/SeuNome/Videos/roteiros"`)
-- **`okTurns`**: Quantas vezes o sistema pedirá "continuação" ao gerar o roteiro (padrão: 3)
-- **`language`**: Idioma em que o roteiro será gerado (padrão: "romeno"). Pode ser qualquer idioma suportado pelo modelo
-- **`geminiKey`**: Chave da API do Google Gemini (obrigatório). Obtenha em [Google AI Studio](https://makersuite.google.com/app/apikey)
+O projeto usa o conceito de **canais** — cada canal tem seu próprio agente (prompt), idioma e pasta de saída.
 
-### Executando o gerador
+```js
+// Canal ativo (altere para o canal desejado)
+export const selectedChannel = "ytb-west";
+```
 
-**Opção 1: Usar o título do config.js**
+Os canais disponíveis estão no array `channels`:
+
+| Nome | Idioma | Pasta de saída |
+|------|--------|----------------|
+| `ytb-west` | Romeno | `C:/Users/leoro/Videos/ytb-west` |
+| `guadalupe` | Espanhol | `C:/Users/leoro/Videos/guadalupe` |
+| `mexico` | Espanhol | `C:/Users/leoro/Videos/mexico-videos` |
+
+Para adicionar um novo canal, inclua uma entrada no array `channels` em `config.js`:
+
+```js
+{
+  name: "meu-canal",
+  displayName: "Meu Canal",
+  agentFile: "agent-meu-canal.txt",
+  outputPath: "C:/Users/SeuNome/Videos/meu-canal",
+  language: "português",
+  generateThumbnailPrompt: true,
+  generateBlockImagePrompts: false,
+}
+```
+
+### 3. Defina o(s) título(s)
+
+**Um único título:**
+```js
+export const config = {
+  title: "Meu título aqui",
+  // ...
+};
+```
+
+**Múltiplos títulos (processamento em lote):**
+```js
+export const config = {
+  title: [
+    "Primeiro título",
+    "Segundo título",
+    "Terceiro título",
+  ],
+  // ...
+};
+```
+
+### 4. Outras opções do `config`
+
+| Opção | Padrão | Descrição |
+|-------|--------|-----------|
+| `model` | `"gemini-3-flash-preview"` | Modelo do Gemini a usar |
+| `okTurns` | `3` | Número de continuações do roteiro (mais = roteiro mais longo) |
+| `summaryAgentFile` | `"agent-summary.txt"` | Arquivo de prompt para o agente de resumo |
+| `thumbnailAgentFile` | `"agent-thumbnail.txt"` | Arquivo de prompt para o agente de thumbnail |
+
+---
+
+## Como executar
+
+### Usando as configurações do `config.js`
+
 ```bash
 npm start
 ```
 
-**Opção 2: Especificar título na linha de comando**
+### Sobrescrevendo o título pela linha de comando
+
 ```bash
-npm start -- --title "Seu título aqui"
+npm start -- --title "Título do vídeo"
 ```
 
-**Opção 3: Personalizar outras opções**
+### Sobrescrevendo o canal
+
 ```bash
-npm start -- --title "Título" --okTurns 5 --model "gemini-3-pro-preview" --language "português"
+npm start -- --channel guadalupe
 ```
 
-### Parâmetros disponíveis
+### Combinando parâmetros
 
-Você pode passar os seguintes parâmetros na linha de comando:
+```bash
+npm start -- --title "Meu título" --channel mexico --okTurns 5 --model "gemini-3-pro-preview"
+```
 
-- `--title "texto"` - Título do vídeo
-- `--okTurns 3` - Número de continuações (padrão: 3)
-- `--model "nome"` - Modelo do Gemini a usar
-- `--agentFile "arquivo.txt"` - Arquivo de prompt personalizado
-- `--language "idioma"` - Idioma do roteiro gerado (padrão: "romeno")
-- `--geminiKey "chave"` - Chave da API do Gemini (sobrescreve a do config.js)
+### Todos os parâmetros disponíveis
 
-## 📁 Estrutura de arquivos gerados
+| Parâmetro | Descrição |
+|-----------|-----------|
+| `--title "texto"` | Título do vídeo (sobrescreve o do `config.js`) |
+| `--channel nome` | Canal a usar (sobrescreve `selectedChannel`) |
+| `--okTurns N` | Número de continuações do roteiro |
+| `--model "nome"` | Modelo do Gemini |
+| `--agentFile "arquivo"` | Arquivo de prompt do agente principal |
+| `--summaryAgentFile "arquivo"` | Arquivo de prompt do agente de resumo |
+| `--thumbnailAgentFile "arquivo"` | Arquivo de prompt do agente de thumbnail |
+| `--language "idioma"` | Idioma do roteiro (sobrescreve o do canal) |
+| `--outputPath "caminho"` | Pasta de saída (sobrescreve o do canal) |
+| `--geminiKey "chave"` | Chave da API (sobrescreve o do `config.js`) |
 
-Após a execução, os arquivos serão salvos em:
+---
+
+## Arquivos gerados
+
+Para cada título processado, é criada uma subpasta dentro do `outputPath` do canal:
 
 ```
 outputPath/
-└── nome-do-titulo/
-    ├── roteiro nome-do-titulo.txt  (roteiro completo)
-    ├── info-nome-do-titulo.txt     (apenas o título)
-    └── roteiro nome-do-titulo.srt  (legendas para vídeo)
+└── primeiros 20 chars do titulo.../
+    ├── info-primeiros 20 chars.txt   (título + thumbnail prompt + descrição + roteiro)
+    └── roteiro primeiros 20 chars.srt (legendas para o vídeo)
 ```
 
 **Exemplo:**
 ```
-C:/Users/leoro/Videos/ytb west/
-└── au umilit vadva si i/
-    ├── roteiro au umilit vadva si i.txt
-    ├── info-au umilit vadva si i.txt
-    └── roteiro au umilit vadva si i.srt
+C:/Users/leoro/Videos/ytb-west/
+└── au izgonit mama cu cop.../
+    ├── info-au izgonit mama cu cop.txt
+    └── roteiro au izgonit mama cu cop.srt
 ```
 
-## 📝 Formato dos arquivos gerados
+### Arquivo `info-*.txt`
 
-### Arquivo .txt (Roteiro)
-Contém o roteiro narrativo completo, limpo e formatado, pronto para narração.
+Contém todas as informações do roteiro em um único arquivo:
 
-### Arquivo .srt (Legendas)
-Arquivo de legendas no formato padrão SRT, com:
-- Blocos de até 500 caracteres
-- Máximo de 100 palavras por bloco
+```
+TITULO:
+<título completo>
+-------------
+PROMPT THUMBNAIL:
+<prompt gerado para a thumbnail>
+--------------
+DESCRIÇÃO
+<resumo/descrição do roteiro>
+--------------
+ROTEIRO
+<roteiro narrativo completo>
+```
+
+### Arquivo `.srt` (Legendas)
+
+Arquivo de legendas no formato SRT padrão, com:
+- Blocos de até 500 caracteres / máximo 100 palavras
 - Duração de 30 segundos por bloco
 - Intervalo de 10 segundos entre blocos
 
-## ⚙️ Como funciona
+---
 
-1. **Inicialização**: O sistema lê o título e o arquivo de prompt (`agent.txt`)
-2. **Geração**: Envia o título para o Gemini e solicita o roteiro
-3. **Continuação**: Faz múltiplas solicitações de continuação (conforme `okTurns`)
-4. **Limpeza**: Remove metatexto, formatações e textos indesejados da IA
-5. **Exportação**: Gera os arquivos .txt e .srt na pasta configurada
+## Como funciona internamente
 
-## 🔧 Solução de problemas
-
-### Erro: "GEMINI_API_KEY não definida"
-- Verifique se a chave está configurada no arquivo `config.js` no campo `geminiKey`
-- Confirme que a chave está escrita corretamente e não está vazia
-- Você também pode passar a chave via parâmetro: `--geminiKey "sua_chave"`
-
-### Erro: "Título não informado"
-- Configure o título no `config.js` ou use `--title` na linha de comando
-
-### Erro: "Prompt do agente está vazio"
-- Verifique se o arquivo `agent.txt` existe e não está vazio
-
-### Arquivos não são salvos
-- Verifique se o caminho em `outputPath` está correto
-- Confirme que você tem permissão de escrita na pasta especificada
-
-### Roteiro muito curto ou incompleto
-- Aumente o valor de `okTurns` no config ou via parâmetro (ex: `--okTurns 5`)
-
-## 📌 Dicas de uso
-
-1. **Títulos descritivos**: Use títulos que descrevam bem a história para melhores resultados
-2. **Ajuste okTurns**: Para roteiros mais longos, aumente `okTurns` (3-5 é recomendado)
-3. **Organize pastas**: Configure `outputPath` para uma pasta dedicada aos seus roteiros
-4. **Revisão**: Sempre revise o roteiro gerado antes de usar em produção
-
-## 📄 Licença
-
-ISC
-
-## 🤝 Suporte
-
-Se encontrar problemas ou tiver dúvidas:
-1. Verifique se todas as dependências estão instaladas (`npm install`)
-2. Confirme que sua chave de API do Gemini está válida
-3. Verifique os logs no terminal para mensagens de erro específicas
+```
+título
+  │
+  ├─► [Etapa 1] Agente de resumo  → descrição do roteiro
+  │
+  ├─► [Etapa 2] Agente de thumbnail → prompt para thumbnail
+  │
+  └─► [Etapa 3] Agente principal (okTurns repetições)
+        │
+        ├─ limpeza do texto (metatexto, formatações)
+        ├─ info-*.txt
+        └─ *.srt
+```
 
 ---
 
-**Desenvolvido para facilitar a criação de roteiros narrativos para conteúdo de vídeo.**
+## Solução de problemas
+
+**`GEMINI_API_KEY não definida`**
+- Defina `geminiKey` em `config.js` ou passe via `--geminiKey "sua_chave"`
+
+**`Canal "X" não encontrado`**
+- Verifique o valor de `selectedChannel` ou do parâmetro `--channel`
+- Canais disponíveis: `ytb-west`, `guadalupe`, `mexico`
+
+**`Título não informado`**
+- Defina `title` em `config.js` ou use `--title "..."` na linha de comando
+
+**`Prompt do agente está vazio`**
+- Verifique se os arquivos `.txt` dos agentes existem e não estão vazios
+
+**Arquivos não são salvos**
+- Confirme que o `outputPath` do canal existe e que você tem permissão de escrita
+
+**Roteiro muito curto**
+- Aumente `okTurns` (ex: `--okTurns 5`); recomendado entre 3 e 6
+
+**Erro 503 / 429 da API**
+- O serviço está sobrecarregado ou o limite de taxa foi atingido; aguarde alguns minutos e tente novamente
+
+---
+
+## Licença
+
+ISC

@@ -4,49 +4,35 @@
 
 // Canais pré-configurados
 export const channels = [
-  {
-    name: "guadalupe",
-    displayName: "Guadalupe Mexico",
-    agentFile: "agent-guadalupe.txt",
-    outputPath: "C:/Users/leoro/Videos/guadalupe",
-    language: "espanhol",
-  },
-  {
-    name: "ytb-west",
-    displayName: "YTB West",
-    agentFile: "agent.txt",
-    outputPath: "C:/Users/leoro/Videos/ytb-west",
-    language: "romeno",
-  },
   // Adicione mais canais aqui conforme necessário
   // {
   //   name: "outro-canal",
   //   displayName: "Outro Canal",
   //   agentFile: "agent-outro.txt",
-  //   outputPath: "C:/Users/leoro/Videos/outro-canal",
+  //   outputPath: "C:outro-canal",
   //   language: "português",
+  //   generateThumbnailPrompt: true,
+  //   generateBlockImagePrompts: false,
   // },
 ];
 
 // Canal selecionado (use o nome do canal do array acima)
-export const selectedChannel = "guadalupe";
-// export const selectedChannel = "ytb-west";
+// export const selectedChannel = "guadalupe";
+export const selectedChannel = "outro-canal";
+// export const selectedChannel = "mexico";
 
 // Configurações padrão (raramente alteradas)
 export const config = {
   // Título(s) do vídeo (obrigatório se não for passado por parâmetro)
   // Exemplo com um título: title: "Meu título aqui"
   // Exemplo com múltiplos: title: ["Título 1", "Título 2", "Título 3"]
-  title: "1Escucha con fe esta oración a San Benito y algo grande sucederá.",
-  // title: [
-  //   "Oración poderosa a Nuestra Señora de Guadalupe, San Benito y San Miguel. Escúchala con fe.",
-  //   "Escucha esta oración a San Miguel y San Benito y prepárate para una nueva vida. Escúchala con fe.",
-  // ],
+
+  title: "Meu título aqui",
 
   // Modelo do Gemini a ser usado
   // Padrão: gemini-3-pro-preview
-  model: "gemini-3-pro-preview",
-  // model: "gemini-3-flash-preview",
+  // model: "gemini-3-pro-preview",
+  model: "gemini-3-flash-preview",
 
   // Arquivo do agente de resumo (gera descrição do roteiro)
   summaryAgentFile: "agent-summary.txt",
